@@ -1,4 +1,5 @@
 # Vegetation-Indices
 
-This module extract vegetation indices for a given input image. Calculated indices:
+This module extracts 4 different RGB-based vegetation indices from a given input image. The calculated indices are:
+1. 
 
