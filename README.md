@@ -11,11 +11,11 @@ This module extracts 4 different RGB-based vegetation indices from a given input
 
 <img src="https://user-images.githubusercontent.com/26482319/114688051-021d0200-9d1d-11eb-9e08-3b921a7384ee.jpg"/>
 
-##How to run
+## How to run
 
-##Dependencies 
+## Dependencies 
 
-##Citation
+## Citation
 
-##References
+## References
 
