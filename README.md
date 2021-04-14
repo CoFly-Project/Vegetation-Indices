@@ -17,10 +17,10 @@ python3 index_calculation.py
 ```
 
 ## Dependencies 
-Install all the neccecary dependencies using pip3 install <package name>
+Install all the neccecary dependencies using ```pip3 install <package name>```
   
-  Required packages:
-    * numpy   
+Required packages:
+  * numpy   
   
 
 ## Citation
