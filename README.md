@@ -15,7 +15,8 @@ This module extracts 4 different RGB-based vegetation indices from a given input
 ```
 python3 index_calculation.py ~IMAGE_PATH ~FOLDER_PATH
 ```
-The ~IMAGE_PATH refers to the absolute path of the input image and the ~FOLDER_PATH to the absolute path of the preferred folder where the extracted results of the vegetation indices and their corresponding .npy files will be saved. The .npy files are necessary for the calculation of the ```Problematic Areas Detection``` module.
+The ~IMAGE_PATH refers to the absolute path of the input image and the ~FOLDER_PATH to the absolute path of the preferred folder where the extracted results of the vegetation
+indices and their corresponding .npy files will be saved. The .npy files are necessary for the calculation of the ```Problematic-Areas-Detection``` module.
   
   
 ## Dependencies 
