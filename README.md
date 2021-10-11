@@ -31,6 +31,12 @@ Required packages:
   
 ## Results
 Example of the ```Vegetation Index``` module results
+  <tr class="center">
+    <td><img src= =500x500 /></td>
+    <td><img src= =500x500 /></td>
+    <td><img src= =500x500/></td>    
+  </tr>
+  
   <img src="https://user-images.githubusercontent.com/26482319/114688051-021d0200-9d1d-11eb-9e08-3b921a7384ee.jpg"/>
   <img src="https://user-images.githubusercontent.com/26482319/114688051-021d0200-9d1d-11eb-9e08-3b921a7384ee.jpg"/>
 
