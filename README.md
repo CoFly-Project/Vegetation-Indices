@@ -68,7 +68,7 @@ Example of the ```Vegetation Index``` module results
 
 </table>
 
-  **Figure 1** Samples of the ```Vegetation Indices``` module results: (a) a given RGB input image, (b) VARI, (c) GLI, (d) NGRDI and (e) NGBDI.
+  **Figure 1** Results of the ```Vegetation Indices``` module results: (a) a given RGB input image, (b) VARI, (c) GLI, (d) NGRDI and (e) NGBDI.
   
 ## Citation
 (not published yet)
