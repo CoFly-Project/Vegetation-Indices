@@ -9,7 +9,6 @@ This module extracts 4 different RGB-based vegetation indices from a given input
 3. NGRDI
 4. NGBDI
 
-<img src="https://user-images.githubusercontent.com/26482319/114688051-021d0200-9d1d-11eb-9e08-3b921a7384ee.jpg"/>
 
 ## How to run
 ```
@@ -28,7 +27,13 @@ Required packages:
   * matplotlib 
   * opencv-python
   * pillow 
+
   
+## Results
+Example of the ```Vegetation Index``` module results
+  <img src="https://user-images.githubusercontent.com/26482319/114688051-021d0200-9d1d-11eb-9e08-3b921a7384ee.jpg"/>
+  <img src="https://user-images.githubusercontent.com/26482319/114688051-021d0200-9d1d-11eb-9e08-3b921a7384ee.jpg"/>
+
 ## Citation
 (not published yet)
 
