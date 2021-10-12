@@ -29,7 +29,7 @@ Required packages:
   * opencv-python
   
 ## Results
-Example of the ```Vegetation Index``` module results
+*Visualizations
   
 <table class="center">
    <tr class="center">
