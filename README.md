@@ -27,17 +27,15 @@ Required packages:
   * numpy   
   * matplotlib 
   * opencv-python
-  * pillow 
-
   
 ## Results
 Example of the ```Vegetation Index``` module results
   
 <table class="center">
    <tr class="center">
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136773402-d76cdbea-143c-42e4-9df9-10ec277c902a.png" =400x400 /></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" =400x400 /></td>
-<!--     <td><img src= "https://user-images.githubusercontent.com/80779522/136771662-00ad0db0-3057-4223-97f2-2a10ff52c602.png" =400x400 /></td>    -->
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136773402-d76cdbea-143c-42e4-9df9-10ec277c902a.png" align="center" width="300" height="276"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="300" height="276" /></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136929438-9a4e79e1-e4a5-42ea-922f-4247ad13993a.png" align="center" width="300" height="276" /></td>   
    </tr>   
    <tr align="center">
     <td>(a) Input image</td>
@@ -46,8 +44,8 @@ Example of the ```Vegetation Index``` module results
  
   </tr>  
   <tr class="center">
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" =400x400 /></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" =400x400 /></td>   
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" align="center" width="300" height="276" /></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" align="center" width="300" height="276" /></td>   
   </tr>
   <tr align="center">
     <td>(d) NGRDI</td>
