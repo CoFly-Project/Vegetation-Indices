@@ -37,7 +37,7 @@ Example of the ```Vegetation Index``` module results
    <tr class="center">
     <td><img src= "https://user-images.githubusercontent.com/80779522/136773402-d76cdbea-143c-42e4-9df9-10ec277c902a.png" =400x400 /></td>
     <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" =400x400 /></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771662-00ad0db0-3057-4223-97f2-2a10ff52c602.png" =400x400 /></td>   
+<!--     <td><img src= "https://user-images.githubusercontent.com/80779522/136771662-00ad0db0-3057-4223-97f2-2a10ff52c602.png" =400x400 /></td>    -->
    </tr>   
    <tr align="center">
     <td>(a) Input image</td>
