@@ -56,7 +56,7 @@ Example of the ```Vegetation Index``` module results
 
 </table>
 
-  **Figure 1** Example of  ```Vegetation Indices``` module pipeline of a given input image and the extracted VI maps. Lower index values are displayed with red color while higher index values correspond to green color.
+  **Figure 1** Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps. Lower index values are displayed with red color while higher index values correspond to green color.
   
 ## Citation
 (not published yet)
