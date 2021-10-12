@@ -6,10 +6,10 @@
 This module gives the ability to the end-user to extract a specific 
   
 This module extracts 4 different RGB-based vegetation indices from a given input image. The available indices are:
-1. VARI
-2. GLI
-3. NGRDI
-4. NGBDI
+1. Visible Atmospheric Resistant Index (VARI)
+2. Green Leaf Index (GLI)
+3. Normalized Green Red Difference Index (NGRDI)
+4. Normalized Green Blue Difference Index (NGBDI)
 
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for every vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
