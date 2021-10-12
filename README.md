@@ -9,15 +9,9 @@ This module extracts 4 different RGB-based vegetation indices from a given input
 3. NGRDI
 4. NGBDI
 
-Each one of the four selected VIs represents the actual reflectance of the field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
-  
-## How to run
-```
-python3 index_calculation.py ~IMAGE_PATH ~OUTPUT_PATH
-```
-The ```~IMAGE_PATH``` refers to the absolute path of the input image and the ```~OUTPUT_PATH``` to the absolute path of the preferred folder where the extracted results of the vegetation indices and their corresponding ```*.npy``` files will be saved. 
-  
-> Note: The ```*.npy``` files are necessary for the calculation of the ```Problematic-Areas-Detection``` module.
+Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
+The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for every vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
+
   
   
 ## Dependencies 
@@ -28,8 +22,24 @@ Required packages:
   * matplotlib 
   * opencv-python
   
+  
+## How to Run
+
+1. Clone this repo
+2. Open terminal on ~REPO_PATH
+3. Run: 
+```
+  python3 index_calculation.py ~IMAGE_PATH ~OUTPUT_PATH
+```
+
+**ARGUMENTS**
+  
+* ```~IMAGE_PATH``` refers to the absolute path of the input image
+* ```~OUTPUT_PATH``` to the absolute path of the preferred folder where the extracted VI maps and their corresponding ```*.npy``` files will be saved. 
+  
+  
 ## Results
-* **Visualizations**
+**Visualizations**
   
 <table class="center">
    <tr class="center">
