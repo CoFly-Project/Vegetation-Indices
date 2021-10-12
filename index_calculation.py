@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import sys
 
 
-# -- Create a class for each vegetation_index -- #
+# -- Create a class for calculating the vegetation_index -- #
 class Indexes:
 	def __init__(self, img):
 		self.img = img
