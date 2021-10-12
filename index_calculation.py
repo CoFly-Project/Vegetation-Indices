@@ -15,7 +15,6 @@ class Indexes:
 
 
 	# All these operations aim to not have ZeroDivisionError -- #
-
 	# -- Visible Atmospheric Resistant Index -- #
 	def VARI(self):
 		vari = np.divide((self.G - self.R), (self.G + self.R - self.B + 0.00001))
@@ -38,7 +37,7 @@ class Indexes:
 		return ngbdi
 
 	# -- Identification of the the vegetation_indices -- #
-	# -- This module is able to extract only VARI, GLI, NGRDI and NGBDI maps -- #
+	# -- Check the input of the user and extract the results of the desired vegetation_index -- #
 	def get_index(self, index_name):
 		if index_name == 'VARI':
 			return self.VARI()
@@ -74,11 +73,12 @@ Idx = Indexes(img)
 
 # -- Appropriate messages in order to extract the desired vegetation index results -- # 
 # -- Select the vegetation index with its acronyms -- #
-index_name = input("Please enter the acronym of the Vegetation Index. The available VIs are:\n\
-\n1. Visible Atmospheric Resistant Index (VARI)\n\
+index_name = input("Please enter the acronym of the Vegetation Index. The available VIs are: \n\
+\n\
+1. Visible Atmospheric Resistant Index (VARI) \n\
 2. Green Leaf Index (GLI) \n\
 3. Normalized Green Red Difference Index (NGRDI) \n\
-4. Normalized Green Blue Difference Index (NGBDI)\n\
+4. Normalized Green Blue Difference Index (NGBDI) \n\
 --> ")
 
 # -- Check the input of the user -- #
