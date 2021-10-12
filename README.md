@@ -35,7 +35,7 @@ Required packages:
 **ARGUMENTS**
   
 * ```~IMAGE_PATH``` refers to the absolute path of the input image
-* ```~OUTPUT_PATH``` to the absolute path of the preferred folder where the extracted VI maps and their corresponding ```*.npy``` files will be saved. 
+* ```~OUTPUT_PATH``` corresponds to the absolute path where the extracted VI maps and their corresponding ```*.npy``` files will be saved. 
   
   
 ## Results
