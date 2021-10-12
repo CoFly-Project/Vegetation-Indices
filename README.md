@@ -29,7 +29,7 @@ Required packages:
   * opencv-python
   
 ## Results
-*Visualizations
+* **Visualizations**
   
 <table class="center">
    <tr class="center">
