@@ -3,7 +3,9 @@
   
 # Vegetation Indices
 
-This module extracts 4 different RGB-based vegetation indices from a given input image. The calculated indices are:
+This module gives the ability to the end-user to extract a specific 
+  
+This module extracts 4 different RGB-based vegetation indices from a given input image. The available indices are:
 1. VARI
 2. GLI
 3. NGRDI
