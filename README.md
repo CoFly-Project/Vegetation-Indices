@@ -68,10 +68,10 @@ The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` f
 </figure>
    -->
   
-<!--   <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137117511-cb5993fe-0b81-4ed5-b36c-bafb95a47eaa.png" width="2000" />
+  <p align="center">
+<img src="" width="2000" />
   
-  **Figure 2** Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps with their corresponding indices arrays (__*.npy files__).  -->
+  **Figure 2** Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps. 
  
   
   
