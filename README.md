@@ -12,8 +12,8 @@ The main objective of this module is to enhance the capacities of the CoFly Proj
   
 <figure>
   <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137125039-45211c26-4836-4405-956a-4fcb37df6751.png" alt="Trulli" width="400"">
-<figcaption align = "center"><p align="center"><b>Figure 1 Available VIs.</b></figcaption>
+<img src="https://user-images.githubusercontent.com/80779522/137125039-45211c26-4836-4405-956a-4fcb37df6751.png" alt="Trulli" width="400">
+<figcaption align = "center"><p align="center"><b>Figure 1. Available VIs.</b></figcaption>
 </figure>
 
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
@@ -60,13 +60,23 @@ The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` f
   </tr> 
  </table> -->
 
-
+<figure>
   <p align="center">
+<img src="https://user-images.githubusercontent.com/80779522/137117511-cb5993fe-0b81-4ed5-b36c-bafb95a47eaa.png" width="2000" alt="Trulli">
+<figcaption align = "center"><p align="center"><b> 
+  Figure 2. Example of  Vegetation Indices module pipeline of a given input image and its extracted VI maps with their corresponding indices arrays (*.npy files). </b></figcaption>
+</figure>
+  
+  
+<!--   <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/137117511-cb5993fe-0b81-4ed5-b36c-bafb95a47eaa.png" width="2000" />
   
-  **Figure 2** Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps with their corresponding indices arrays (__*.npy files__). The estimated VI maps are dispalyed with a red-green color-map by using the appropriate scale, where the lower index values are displayed with red color while higher index values correspond to green color.
-
-    
+  **Figure 2** Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps with their corresponding indices arrays (__*.npy files__).  -->
+ 
+  
+  
+The  estimated  VI  maps  are  displayed a red-green  color-map  by  using  the  appropriate  scale,  as  demonstrated  in  Figures  2(a), 2(c), 2(e) and 2(g), where the lower index values are displayed with red color while higher index values correspond to green color. Each visualization for every VI is unique as different aspects of plant health are assumed.                                                                                                                     
+                                                                                                                           
 ## Dependencies 
 Install all the neccecary dependencies using ```pip3 install <package name>```
   
