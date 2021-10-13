@@ -10,7 +10,7 @@ This module gives the ability to the end-user to extract a specific vegetation i
 4. *Normalized Green Blue Difference Index* (__NGBDI__)
 
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
-The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for every vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
+The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
 
   
   
@@ -41,7 +41,7 @@ Required packages:
 ## Results
 **Visualizations**
   
-<table class="center">
+<!-- <table class="center">
    <tr class="center">
     <td><img src= "https://user-images.githubusercontent.com/80779522/136773402-d76cdbea-143c-42e4-9df9-10ec277c902a.png" align="center" width="300" height="276"/></td>
     <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="300" height="276" /></td>
@@ -60,10 +60,13 @@ Required packages:
   <tr align="center">
     <td>(d) NGRDI</td>
     <td>(e) NGBDI</td>
-  </tr>
+  </tr> 
+ </table> -->
 
-</table>
 
+  <p align="center">
+<img src="https://user-images.githubusercontent.com/80779522/137089786-881a88f5-9eb2-4cb0-b868-63e84ff4b992.png" width="2000" />
+  
   **Figure 1** Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps. Lower index values are displayed with red color while higher index values correspond to green color.
   
 ## Citation
