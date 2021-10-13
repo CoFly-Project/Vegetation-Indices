@@ -3,25 +3,22 @@
   
 # Vegetation Indices
 
-This module gives the ability to the end-user to extract a specific vegetation index map from a given input image. The available indices are:
+The main objective of this module is to enhance the capacities of the CoFly Project towards a cognitive precision agriculture system, in order to estimate the vegetation health of the examined field region. To achieve that, the given input image is further processed by the ```Vegetation Indices``` (VIs) module and extract the VIs maps and their corresponding indices arrays. The available indices are:
 1. *Visible Atmospheric Resistant Index* (__VARI__)
 2. *Green Leaf Index* (__GLI__)
 3. *Normalized Green Red Difference Index* (__NGRDI__)
 4. *Normalized Green Blue Difference Index* (__NGBDI__)
 
+  
+<figure>
+  <p align="center">
+<img src="https://user-images.githubusercontent.com/80779522/137125039-45211c26-4836-4405-956a-4fcb37df6751.png" alt="Trulli" width="400"">
+<figcaption align = "center"><p align="center"><b>Figure 1 Available VIs.</b></figcaption>
+</figure>
+
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
 
-  
-  
-## Dependencies 
-Install all the neccecary dependencies using ```pip3 install <package name>```
-  
-Required packages:
-  * numpy   
-  * matplotlib 
-  * opencv-python
-  
   
 ## How to Run
 
@@ -65,10 +62,20 @@ Required packages:
 
 
   <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137089786-881a88f5-9eb2-4cb0-b868-63e84ff4b992.png" width="2000" />
+<img src="https://user-images.githubusercontent.com/80779522/137117511-cb5993fe-0b81-4ed5-b36c-bafb95a47eaa.png" width="2000" />
   
-  **Figure 1** Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps. Lower index values are displayed with red color while higher index values correspond to green color.
+  **Figure 2** Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps with their corresponding indices arrays (__*.npy files__). The estimated VI maps are dispalyed with a red-green color-map by using the appropriate scale, where the lower index values are displayed with red color while higher index values correspond to green color.
+
+    
+## Dependencies 
+Install all the neccecary dependencies using ```pip3 install <package name>```
   
+Required packages:
+  * numpy   
+  * matplotlib 
+  * opencv-python
+    
+    
 ## Citation
 (not published yet)
 
