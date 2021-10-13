@@ -75,7 +75,7 @@ The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` f
  
   
   
-The  estimated  VI  maps  are  displayed a red-green  color-map  by  using  the  appropriate  scale,  as  demonstrated  in  Figures  2(a), 2(c), 2(e) and 2(g), where the lower index values are displayed with red color while higher index values correspond to green color. Each visualization for every VI is unique as different aspects of plant health are assumed.                                                                                                                     
+The  estimated  VI  maps  are  displayed with a red-green  color-map  by  using  the  appropriate  scale,  as  demonstrated  in  Figures  2(a), 2(c), 2(e) and 2(g), where the lower index values are displayed with red color while higher index values correspond to green color. Each visualization for every VI is unique as different aspects of plant health are assumed.                                                                                                                     
                                                                                                                            
 ## Dependencies 
 Install all the neccecary dependencies using ```pip3 install <package name>```
