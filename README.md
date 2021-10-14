@@ -33,7 +33,7 @@ The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` f
   
 * ```--input_image``` refers to the absolute path of the input image
 * ```--output_path``` corresponds to the absolute path where the extracted VI maps and their corresponding ```*.npy``` files will be saved. 
-* ```--vis``` corresponds to the short name of VIs
+* ```--vis``` corresponds to the short names of VIs
   
 For example:
   ```
