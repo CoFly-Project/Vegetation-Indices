@@ -93,6 +93,7 @@ Required packages:
   * numpy   
   * matplotlib 
   * opencv-python
+  * argparse
     
     
 ## Citation
