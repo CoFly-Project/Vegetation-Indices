@@ -75,7 +75,7 @@ parser.add_argument('--output_path', required=True,
 			  help="Please enter the absolute path of the output path.")
 
 parser.add_argument('--vis', nargs = '*',
-			  help="Please enter the short name of the vegetation index/indices.")
+			  help="Please enter the short name of the Vegetation Index/Indices.")
 
 args = parser.parse_args()
 
