@@ -36,8 +36,7 @@ class Indexes:
 		ngbdi = np.clip(ngbdi, -1, +1)
 		return ngbdi
 
-	# -- Identification of the the vegetation_indices -- #
-	# -- Check the input of the user and extract the results of the desired vegetation_index -- #
+	# --  Identification of the Idx object -- #
 	def get_index(self, index_name):
 		if index_name == 'VARI':
 			return self.VARI()
