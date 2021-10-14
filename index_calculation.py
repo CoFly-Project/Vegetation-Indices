@@ -59,6 +59,7 @@ def find_real_min_max(perc, edges, index_clear):
 	max_v = edges[mask].max()
 	return min_v, max_v
 
+# -- A necessary message for the arguments
 parser = argparse.ArgumentParser(epilog = textwrap.dedent('''\
 						        The available VIs are:
 						        1. Visible Atmospheric Resistant Index (VARI)
@@ -67,6 +68,7 @@ parser = argparse.ArgumentParser(epilog = textwrap.dedent('''\
 						        4. Normalized Green Blue Difference Index (NGBDI)
 						        '''), formatter_class=argparse.RawTextHelpFormatter)
 
+# -- Parsing the args -- #
 parser.add_argument('--input_image', required=True,
 			  help="Please enter the absolute path of the input image.")
 
@@ -83,8 +85,8 @@ img_name = os.path.basename(img_path)
 save_dir = os.path.abspath(args.output_path)
 index = args.vis
 
-# available_indices = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
-if len(index) == 0:
+# -- Check for the arguments if they are None -- #
+if index == None:
 	index = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
 
 index  = [elem.upper() for elem in index]
