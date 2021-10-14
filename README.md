@@ -26,14 +26,19 @@ The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` f
 2. Open terminal on ~REPO_PATH
 3. Run: 
 ```
-  python3 index_calculation.py ~IMAGE_PATH ~OUTPUT_PATH
+  python3 index_calculation.py --input_image ~IMAGE_PATH --output_path ~OUTPUT_PATH --vis ~SHORT_NAME_OF_VIs
 ```
 
 **ARGUMENTS**
   
-* ```~IMAGE_PATH:``` refers to the absolute path of the input image
-* ```~OUTPUT_PATH:``` corresponds to the absolute path where the extracted VI maps and their corresponding ```*.npy``` files will be saved. 
+* ```--input_image``` refers to the absolute path of the input image
+* ```--output_path``` corresponds to the absolute path where the extracted VI maps and their corresponding ```*.npy``` files will be saved. 
+* ```--vis``` corresponds to the short name of VIs
   
+For example:
+  ```
+  python index_calculation.py --input_image C:\Users\...\input_image.png --output_path C:\Users\...\output_folder --vis vari gli
+  ```
   
 ## Results
 **Visualizations**
