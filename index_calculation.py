@@ -59,69 +59,74 @@ def find_real_min_max(perc, edges, index_clear):
 	max_v = edges[mask].max()
 	return min_v, max_v
 
-# -- Read the given arguments -- #
-img_path = os.path.abspath(sys.argv[1]) # -- The absolute path of the given input image -- #
-img_name = os.path.basename(img_path) # -- The name of the input image --#
-save_dir = os.path.abspath(sys.argv[2]) # -- The absolute path where the results will be saved -- #
+parser = argparse.ArgumentParser(epilog = textwrap.dedent('''\
+						        The available VIs are:
+						        1. Visible Atmospheric Resistant Index (VARI)
+						        2. Green Leaf Index (GLI)
+						        3. Normalized Green Red Difference Index (NGRDI)
+						        4. Normalized Green Blue Difference Index (NGBDI)
+						        '''), formatter_class=argparse.RawTextHelpFormatter)
+
+parser.add_argument('--input_image', required=True,
+			  help="Please enter the absolute path of the input image.")
+
+parser.add_argument('--output_path', required=True,
+			  help="Please enter the absolute path of the output path.")
+
+parser.add_argument('--vis', nargs = '*',
+			  help="Please enter the short name of the vegetation index/indices.")
+
+args = parser.parse_args()
+
+img_path = os.path.abspath(args.input_image)
+img_name = os.path.basename(img_path)
+save_dir = os.path.abspath(args.output_path)
+index = args.vis
+
+# available_indices = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
+if len(index) == 0:
+	index = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
+
+index  = [elem.upper() for elem in index]
 
 img_4ch = cv2.imread(img_name, cv2.IMREAD_UNCHANGED)
 img = img_4ch[:, :, :3].astype(np.float)
 img[img_4ch[:, :, 3] == 0] = np.nan
 empty_space = img_4ch[:, :, 3] == 0
 
-Idx = Indexes(img)
-
-# -- Appropriate messages in order to extract the desired vegetation index results -- # 
-# -- Select the vegetation index with its acronyms -- #
-index_name = input("Please enter the acronym of the Vegetation Index. The available VIs are: \n\
-\n\
-1. Visible Atmospheric Resistant Index (VARI) \n\
-2. Green Leaf Index (GLI) \n\
-3. Normalized Green Red Difference Index (NGRDI) \n\
-4. Normalized Green Blue Difference Index (NGBDI) \n\
---> ")
-
-# -- Check the input of the user -- #
-if index_name.isupper() == False:
-	index_name = index_name.upper()
-else:
-	index_name = index_name
-
-available_indices = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
-
-if index_name not in available_indices:
-	print('Not availabe Vegetation Index')
-
 # -- Print function for testing reasons -- #
 print('Processing image with shape {} x {}'.format(img.shape[0], img.shape[1]))
 
-# -- Calculate index -- #
-index = Idx.get_index(index_name)
+
+Idx = Indexes(img)
+
+for i in index:
+	# -- Calculate index -- #
+	idx = Idx.get_index(i)
 
 
-index_clear = index[~np.isnan(index)]
+	index_clear = idx[~np.isnan(idx)]
 
-# -- Calculate index histogram -- #
-perc, edges, _ = plt.hist(index_clear, bins=100, range=(-1, 1), color='darkcyan', edgecolor='black')
+	# -- Calculate index histogram -- #
+	perc, edges, _ = plt.hist(index_clear, bins=100, range=(-1, 1), color='darkcyan', edgecolor='black')
 
-# -- Find the real min, max values of the vegetation_index -- #
-lower, upper = find_real_min_max(perc, edges, index_clear)
+	# -- Find the real min, max values of the vegetation_index -- #
+	lower, upper = find_real_min_max(perc, edges, index_clear)
 
-# -- Plot and save the vegetation_index -- #
-f = plt.figure()
-f.set_figheight(index.shape[0]/f.get_dpi())
-f.set_figwidth(index.shape[1]/f.get_dpi())
-ax = plt.Axes(f, [0., 0., 1., 1.])
-ax.set_axis_off()
-f.add_axes(ax)
-ax.imshow(np.clip(index, lower, upper), cmap='RdYlGn', aspect='auto')
-f.savefig('{}/{}.png'.format(save_dir, index_name), transparent=True)
-plt.close()
+	# -- Plot and save the vegetation_index -- #
+	f = plt.figure()
+	f.set_figheight(idx.shape[0]/f.get_dpi())
+	f.set_figwidth(idx.shape[1]/f.get_dpi())
+	ax = plt.Axes(f, [0., 0., 1., 1.])
+	ax.set_axis_off()
+	f.add_axes(ax)
+	ax.imshow(np.clip(idx, lower, upper), cmap='RdYlGn', aspect='auto')
+	f.savefig('{}/{}.png'.format(save_dir, i), transparent=True)
+	plt.close()
 
-
-# -- The *.npy files are useful for the Problematic Areas Detection module -- # 
-index_clipped = np.clip(index, lower, upper)
-np.save('{}/{}_clipped.npy'.format(save_dir, index_name), index_clipped)
+	# -- The *.npy files are useful for the Problematic Areas Detection module -- # 
+	index_clipped = np.clip(idx, lower, upper)
+	np.save('{}/{}_clipped.npy'.format(save_dir, i), index_clipped)
 
 # -- Print function for testing reasons -- #	
 print('Done!')
