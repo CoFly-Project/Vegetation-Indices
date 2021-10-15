@@ -81,7 +81,7 @@ For example:
   <figure>
   <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/137151990-8ad0b3ec-1188-437c-8c3e-6e5a74736416.png" alt="Trulli" width="1500">
-<figcaption align = "center"><p align="center"><b>Figure 2 Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps. </b></figcaption>
+<figcaption align = "center"><p align="center"><b>Figure 2 Example of  Vegetation Indices module pipeline of a given input image and its extracted VI maps. </b></figcaption>
 </figure>
   
 The  estimated  VI  maps  are  displayed with a red-green  color-map  by  using  the  appropriate  scale,  as  demonstrated  in  Figures  2(a), 2(c), 2(e) and 2(g), where the lower index values are displayed with red color while higher index values correspond to green color. Each visualization for every VI is unique as different aspects of plant health are assumed.                                                                                                                     
