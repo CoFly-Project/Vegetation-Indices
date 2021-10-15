@@ -80,7 +80,7 @@ For example:
  
   <figure>
   <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137445046-5228c484-72d1-429b-b292-2554aa0804a9.png" alt="Trulli" width="1500">
+<img src="https://user-images.githubusercontent.com/80779522/137445680-d0bb65e9-95c7-4ac8-ba77-ced2a789d0e5.png" alt="Trulli" width="1500">
 <figcaption align = "center"><p align="center"><b>Figure 2 Example of  Vegetation Indices module pipeline of a given input image and its extracted VI maps. </b></figcaption>
 </figure>
   
