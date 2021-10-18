@@ -35,7 +35,7 @@ The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` f
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/137738228-e62944a3-36d4-442b-b81f-d4df4b37cdc7.png" width="370" />
 <figcaption align = "center"><p align="center"><b> 
-  Figure 1. Workflow of the Vegetation-Indices module. </b></figcaption>
+  Figure 2. Workflow of the Vegetation-Indices module. </b></figcaption>
 </figure>
 
 
@@ -77,9 +77,8 @@ For example:
   </tr>  
  </table>
  <figcaption align = "center"><p align="center"><b> 
-  Figure 2. Image representations of the four calculated VIs. </b></figcaption>
+  Figure 3. Image representations of the four calculated VIs. </b></figcaption>
 
-  
 The  estimated  VI  maps  are  displayed with a red-green  color-map  by  using  the  appropriate  scale, where the lower index values are demonstrated with red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health.                                                                                                                  
                                                                                                                            
 ## Dependencies 
