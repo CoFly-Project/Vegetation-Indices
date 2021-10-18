@@ -62,48 +62,25 @@ For example:
 ## Results
 **Visualizations**
   
-<!-- <table class="center">
+<table class="center">
    <tr class="center">
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136773402-d76cdbea-143c-42e4-9df9-10ec277c902a.png" align="center" width="300" height="276"/></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="300" height="276" /></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136929438-9a4e79e1-e4a5-42ea-922f-4247ad13993a.png" align="center" width="300" height="276" /></td>   
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="300"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136929438-9a4e79e1-e4a5-42ea-922f-4247ad13993a.png" align="center" width="300" /></td>  
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" align="center" width="300"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" align="center" width="300" /></td>  
    </tr>   
    <tr align="center">
-    <td>(a) Input image</td>
-    <td>(b) VARI</td>
-    <td>(c) GLI</td>    
- 
+    <td>(a) VARI</td>
+    <td>(b) GLI</td>   
+    <td>(c) NGRDI</td>
+    <td>(d) NGBDI</td> 
   </tr>  
-  <tr class="center">
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" align="center" width="300" height="276" /></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" align="center" width="300" height="276" /></td>   
-  </tr>
-  <tr align="center">
-    <td>(d) NGRDI</td>
-    <td>(e) NGBDI</td>
-  </tr> 
- </table> -->
+ </table>
+ <figcaption align = "center"><p align="center"><b> 
+  Figure 2. Image representations of the four calculated VIs. </b></figcaption>
 
-<!-- <figure>
-  <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137117511-cb5993fe-0b81-4ed5-b36c-bafb95a47eaa.png" width="2000" alt="Trulli">
-<figcaption align = "center"><p align="center"><b> 
-  Figure 2. Example of  Vegetation Indices module pipeline of a given input image and its extracted VI maps with their corresponding indices arrays (*.npy files). </b></figcaption>
-</figure>
-   -->
   
-<!--   <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137151990-8ad0b3ec-1188-437c-8c3e-6e5a74736416.png" width="1500" />
-  
-  **Figure 2** Example of  ```Vegetation Indices``` module pipeline of a given input image and its extracted VI maps.  -->
- 
-  <figure>
-  <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137445680-d0bb65e9-95c7-4ac8-ba77-ced2a789d0e5.png" alt="Trulli" width="1500">
-<figcaption align = "center"><p align="center"><b>Figure 2 Example of  Vegetation Indices module pipeline of a given input image and its extracted VI maps. </b></figcaption>
-</figure>
-  
-The  estimated  VI  maps  are  displayed with a red-green  color-map  by  using  the  appropriate  scale,  as  demonstrated  in  Figures  2(b), 2(c), 2(d) and 2(e), where the lower index values are displayed with red color while higher index values correspond to green color. Each visualization for every VI is unique as different aspects of plant health are assumed.                                                                                                                     
+The  estimated  VI  maps  are  displayed with a red-green  color-map  by  using  the  appropriate  scale, where the lower index values are demonstrated with red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health.                                                                                                                  
                                                                                                                            
 ## Dependencies 
 Install all the neccecary dependencies using ```pip3 install <package name>```
