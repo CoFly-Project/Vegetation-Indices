@@ -9,25 +9,25 @@ The main objective of this module is to enhance the capacities of the CoFly Proj
 3. *Normalized Green Red Difference Index* (__NGRDI__)
 4. *Normalized Green Blue Difference Index* (__NGBDI__)
 
- 
+<div align="center">
+  
 | Vegetation Index  | Name | Formula |  
 | :----------: | :----------: | :----------: |
 | VARI  | Visible Atmospheric Resistant Index   |![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-R%7D%7BG%20&plus;%20R-B%7D)|
-| GLI   | Green Leaf Index                      |Content Cell  |
-| NGRDI | Normalized Green Red Difference Index |Content Cell  |
-| NGBDI | Normalized Green Blue Difference Index|Content Cell  |
+| GLI   | Green Leaf Index                      |![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B2%5Ctimes%20G-R-B%7D%7B2%5Ctimes%20G&plus;R&plus;B%7D)|
+| NGRDI | Normalized Green Red Difference Index |![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-R%7D%7BG&plus;R%20%7D)|
+| NGBDI | Normalized Green Blue Difference Index|![](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cfrac%7BG-B%7D%7BG&plus;B%7D)|
+
+</div>
+<figcaption align = "center"><p align="center"><b>Figure 1. Available VIs, where G=green band, R = red band and B = blue band of the input image.</b></figcaption>
+</figure>
   
   
-h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x / &theta;<sub>1</sub>x
-x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}
-  
-  
-  
-<figure>
+<!-- <figure>
   <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/137125039-45211c26-4836-4405-956a-4fcb37df6751.png" alt="Trulli" width="400">
 <figcaption align = "center"><p align="center"><b>Figure 1. Available VIs.</b></figcaption>
-</figure>
+</figure> -->
 
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
