@@ -2,7 +2,8 @@ import os
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-import sys
+import argparse
+import textwrap
 
 
 # -- Create a class for calculating the vegetation_index -- #
@@ -83,6 +84,9 @@ img_path = os.path.abspath(args.input_image)
 img_name = os.path.basename(img_path)
 save_dir = os.path.abspath(args.output_path)
 index = args.vis
+
+os.chdir(img_path.split(img_name)[0])
+
 
 # -- Check for the arguments if they are None -- #
 if index == None:
