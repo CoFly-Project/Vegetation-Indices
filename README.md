@@ -33,7 +33,7 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137738228-e62944a3-36d4-442b-b81f-d4df4b37cdc7.png" width="370" />
+<img src="https://user-images.githubusercontent.com/80779522/137738228-e62944a3-36d4-442b-b81f-d4df4b37cdc7.png" width="350" />
 <figcaption align = "center"><p align="center"><b> 
   Figure 2. Workflow of the Vegetation-Indices module. </b></figcaption>
 </figure>
@@ -64,10 +64,10 @@ For example:
   
 <table class="center">
    <tr class="center">
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="300"/></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136929438-9a4e79e1-e4a5-42ea-922f-4247ad13993a.png" align="center" width="300" /></td>  
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" align="center" width="300"/></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" align="center" width="300" /></td>  
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="240"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136929438-9a4e79e1-e4a5-42ea-922f-4247ad13993a.png" align="center" width="240" /></td>  
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" align="center" width="240"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" align="center" width="240" /></td>  
    </tr>   
    <tr align="center">
     <td>(a) VARI</td>
