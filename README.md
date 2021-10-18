@@ -32,7 +32,13 @@ The main objective of this module is to enhance the capacities of the CoFly Proj
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
 
-  
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80779522/137738228-e62944a3-36d4-442b-b81f-d4df4b37cdc7.png" width="370" />
+<figcaption align = "center"><p align="center"><b> 
+  Figure 1. Workflow of the Vegetation-Indices module. </b></figcaption>
+</figure>
+
+
 ## How to Run
 
 1. Clone this repo
