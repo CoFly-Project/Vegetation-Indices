@@ -9,6 +9,19 @@ The main objective of this module is to enhance the capacities of the CoFly Proj
 3. *Normalized Green Red Difference Index* (__NGRDI__)
 4. *Normalized Green Blue Difference Index* (__NGBDI__)
 
+ 
+| Vegetation Index  | Name | Formula |  
+| :----------: | :----------: | :----------: |
+| VARI  | Visible Atmospheric Resistant Index   |![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-R%7D%7BG%20&plus;%20R-B%7D)|
+| GLI   | Green Leaf Index                      |Content Cell  |
+| NGRDI | Normalized Green Red Difference Index |Content Cell  |
+| NGBDI | Normalized Green Blue Difference Index|Content Cell  |
+  
+  
+h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x / &theta;<sub>1</sub>x
+x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}
+  
+  
   
 <figure>
   <p align="center">
