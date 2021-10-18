@@ -13,10 +13,10 @@ The main objective of this module is to enhance the capacities of the CoFly Proj
   
 | Vegetation Index  | Name | Formula |  
 | :----------: | :----------: | :----------: |
-| VARI  | Visible Atmospheric Resistant Index   |![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-R%7D%7BG%20&plus;%20R-B%7D)|
-| GLI   | Green Leaf Index                      |![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B2%5Ctimes%20G-R-B%7D%7B2%5Ctimes%20G&plus;R&plus;B%7D)|
-| NGRDI | Normalized Green Red Difference Index |![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-R%7D%7BG&plus;R%20%7D)|
-| NGBDI | Normalized Green Blue Difference Index|![](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cfrac%7BG-B%7D%7BG&plus;B%7D)|
+| VARI  | Visible Atmospheric Resistant Index   |![](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%5Cfrac%7BG-R%7D%7BG%20&plus;%20R-B%7D)|
+| GLI   | Green Leaf Index                      |![](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%5Cfrac%7B2%5Ctimes%20G-R-B%7D%7B2%5Ctimes%20G&plus;R&plus;B%7D)|
+| NGRDI | Normalized Green Red Difference Index |![](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%7B%5Ccolor%7BWhite%7D%20%5Cfrac%7BG-R%7D%7BG&plus;R%7D%7D)|
+| NGBDI | Normalized Green Blue Difference Index|![](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%5Cfrac%7BG-B%7D%7BG&plus;B%7D)|
 
 </div>
 <figcaption align = "center"><p align="center"><b>Figure 1. Available VIs, where G=green band, R = red band and B = blue band of the input image.</b></figcaption>
