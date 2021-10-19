@@ -69,7 +69,7 @@ Example of the ```Vegetation-Indices``` module of a given input RGB image in ord
   Figure 1. The results of the Vegetation-Indices module for VARI index. </b></figcaption>
 </figure>
 
-As mentioned above, this module calculates 4 VIs. The  estimated  VI  maps  are  displayed with a red-green  color-map  by  using  the  appropriate  scale, where the lower index values are demonstrated with red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health. In Figure 2, we present the calculated VI maps of all VIs of the RGB image Figure 1-(a).
+The estimated VI maps are displayed with a red-green  color-map by using the appropriate scale, where the lower index values are demonstrated with red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health. In Figure 2, we present the calculated VI maps of all VIs based on a RGB image Figure 1-(a).
 
 <table class="center">
    <tr class="center">
