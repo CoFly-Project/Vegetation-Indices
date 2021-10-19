@@ -89,7 +89,7 @@ For example:
   </tr>  
  </table>
 <figcaption align = "center"><p align="center"><b> 
-  Figure 3. Results of the Vegetation-Indices module based on a given input image.
+  Figure 3. Results of the Vegetation-Indices module based on an input image.
 </figure>
   
 
