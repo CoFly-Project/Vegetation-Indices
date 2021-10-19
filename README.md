@@ -74,11 +74,11 @@ For example:
 
 <table class="center">
    <tr class="center">
-    <td><img src= "https://user-images.githubusercontent.com/80779522/137907718-30362a0c-55ec-4fb8-a022-d55cd35f54f9.png" align="center" width="210"/></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="210"/></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136929438-9a4e79e1-e4a5-42ea-922f-4247ad13993a.png" align="center" width="210" height="155"/></td>  
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" align="center" width="210"/></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" align="center" width="210" /></td>  
+    <td><img src= "https://user-images.githubusercontent.com/80779522/137907718-30362a0c-55ec-4fb8-a022-d55cd35f54f9.png" align="center" width="210" height="158"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="210" height="158"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136929438-9a4e79e1-e4a5-42ea-922f-4247ad13993a.png" align="center" width="210" height="158"/></td>  
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" align="center" width="210" height="158"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" align="center" width="210" height="158"/></td>  
    </tr>   
  
    <tr align="center">
