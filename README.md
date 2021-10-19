@@ -28,13 +28,28 @@ and their corresponding *__indices arrays__*. The available indices are:
 
 
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
-The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
+
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137870426-3c3bb34e-7429-4fbc-b819-f30542167ce7.png" width="350" />
+<img src="https://user-images.githubusercontent.com/80779522/137870426-3c3bb34e-7429-4fbc-b819-f30542167ce7.png" width="300" />
 <figcaption align = "center"><p align="center"><b> 
-  Figure 1. Workflow of the Vegetation-Indices module. </b></figcaption>
+  Figure 1. Workflow of the Vegetation-Indices module. 
+  </b></figcaption>
 </figure>
+
+The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module. In Figure 3, we present the above workflow with a given image input in order to calculate the VARI index.
+<!-- Example of the ```Vegetation-Indices``` module of a given input RGB image  -->
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80779522/137873378-ec3020bc-1879-4837-92e0-2922c128f7c0.png" width="400" />
+<figcaption align = "center"><p align="center"><b> 
+  Figure 2. The results of the Vegetation-Indices module for VARI index. </b></figcaption>
+</figure>
+
+
+
+
+
 
 
 ## How to Run
@@ -60,34 +75,29 @@ For example:
 ## Results
 **Visualizations**
 
-Example of the ```Vegetation-Indices``` module of a given input RGB image in order to calculate the VARI index.
-
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137873378-ec3020bc-1879-4837-92e0-2922c128f7c0.png" width="500" />
-<figcaption align = "center"><p align="center"><b> 
-  Figure 1. The results of the Vegetation-Indices module for VARI index. </b></figcaption>
-</figure>
-
-The estimated VI maps are displayed with a red-green  color-map by using the appropriate scale, where the lower index values are demonstrated with red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health. In Figure 2, we present the calculated VI maps of all VIs based on a RGB image Figure 1-(a).
-
 <table class="center">
    <tr class="center">
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="240"/></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136929438-9a4e79e1-e4a5-42ea-922f-4247ad13993a.png" align="center" width="240" /></td>  
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" align="center" width="240"/></td>
-    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" align="center" width="240" /></td>  
+    <td><img src= "https://user-images.githubusercontent.com/80779522/137907718-30362a0c-55ec-4fb8-a022-d55cd35f54f9.png" align="center" width="210"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="210"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136929438-9a4e79e1-e4a5-42ea-922f-4247ad13993a.png" align="center" width="210" height="155"/></td>  
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771653-e6b77f42-789f-4100-86ac-68ff013a55ba.png" align="center" width="210"/></td>
+    <td><img src= "https://user-images.githubusercontent.com/80779522/136771673-89c7463d-387d-4c36-a18c-2764fbb1ab1e.png" align="center" width="210" /></td>  
    </tr>   
+ 
    <tr align="center">
-    <td>(a) VARI</td>
-    <td>(b) GLI</td>   
-    <td>(c) NGRDI</td>
-    <td>(d) NGBDI</td> 
+    <td>(a) Input image</td>
+    <td>(b) VARI</td>
+    <td>(c) GLI</td>   
+    <td>(d) NGRDI</td>
+    <td>(e) NGBDI</td> 
   </tr>  
  </table>
- <figcaption align = "center"><p align="center"><b> 
-  Figure 2. Image representations of the four calculated VIs. </b></figcaption>
+<figcaption align = "center"><p align="center"><b> 
+  Figure 3. Results of the Vegetation-Indices module based on a given input image.
+</figure>
+  
 
+The estimated VI maps are displayed with a red-green color-map by using the appropriate scale, where the lower index values are demonstrated with red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health. 
 
                                                                                                                  
                                                                                                                            
