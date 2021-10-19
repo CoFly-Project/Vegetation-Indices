@@ -3,7 +3,9 @@
   
 # Vegetation Indices
 
-The main objective of this module is to enhance the capacities of the CoFly Project towards a cognitive precision agriculture system, in order to estimate the vegetation health of the examined field region. To achieve that, the given input image is further processed by the *__Vegetation Indices__* (VIs) module in order to extract the __VIs maps__ (*.png files) and their corresponding __indices arrays__ (*.npy files). The available indices are:
+The main objective of this module is to enhance the capacities of the CoFly Project towards a cognitive precision agriculture system, in order to estimate the vegetation health 
+of the examined field region. To achieve that, the given input image is further processed by the *__Vegetation Indices__* (VIs) module in order to extract the __VIs maps__
+*(.png files)* and their corresponding __indices arrays__ *(.npy files)*. The available indices are:
 1. *Visible Atmospheric Resistant Index* (__VARI__)
 2. *Green Leaf Index* (__GLI__)
 3. *Normalized Green Red Difference Index* (__NGRDI__)
