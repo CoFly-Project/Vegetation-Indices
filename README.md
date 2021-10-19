@@ -13,31 +13,25 @@ and their corresponding *__indices arrays__*. The available indices are:
 
 <div align="center">
   
-| Vegetation Index  | Name | Formula |  
-| :----------: | :----------: | :----------: |
+| Vegetation Index | Name | Formula |  
+| :---: | :---: | :---: |
 | VARI  | Visible Atmospheric Resistant Index   |![](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%5Cfrac%7BG-R%7D%7BG%20&plus;%20R-B%7D)|
 | GLI   | Green Leaf Index                      |![](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%5Cfrac%7B2%5Ctimes%20G-R-B%7D%7B2%5Ctimes%20G&plus;R&plus;B%7D)|
 | NGRDI | Normalized Green Red Difference Index |![](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%7B%5Ccolor%7BWhite%7D%20%5Cfrac%7BG-R%7D%7BG&plus;R%7D%7D)|
 | NGBDI | Normalized Green Blue Difference Index|![](https://latex.codecogs.com/gif.latex?%5Cbg_black%20%5Cfrac%7BG-B%7D%7BG&plus;B%7D)|
 
 </div>
-<figcaption align = "center"><p align="center"><b>Figure 1. Available VIs, where G=green band, R = red band and B = blue band of the input image.</b></figcaption>
+<figcaption align = "center"><p align="center"><b>Table 1. Available VIs, where G=green band, R = red band and B = blue band of the input image.</b></figcaption>
 </figure>
   
   
-<!-- <figure>
-  <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137125039-45211c26-4836-4405-956a-4fcb37df6751.png" alt="Trulli" width="400">
-<figcaption align = "center"><p align="center"><b>Figure 1. Available VIs.</b></figcaption>
-</figure> -->
-
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137738228-e62944a3-36d4-442b-b81f-d4df4b37cdc7.png" width="350" />
+<img src="https://user-images.githubusercontent.com/80779522/137870426-3c3bb34e-7429-4fbc-b819-f30542167ce7.png" width="350" />
 <figcaption align = "center"><p align="center"><b> 
-  Figure 2. Workflow of the Vegetation-Indices module. </b></figcaption>
+  Figure 1. Workflow of the Vegetation-Indices module. </b></figcaption>
 </figure>
 
 
@@ -63,7 +57,18 @@ For example:
   
 ## Results
 **Visualizations**
-  
+
+Example of the ```Vegetation-Indices``` module of a given input RGB image in order to calculate the VARI index.
+
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80779522/137873378-ec3020bc-1879-4837-92e0-2922c128f7c0.png" width="500" />
+<figcaption align = "center"><p align="center"><b> 
+  Figure 1. The results of the Vegetation-Indices module for VARI index. </b></figcaption>
+</figure>
+
+As mentioned above, this module calculates 4 VIs. The  estimated  VI  maps  are  displayed with a red-green  color-map  by  using  the  appropriate  scale, where the lower index values are demonstrated with red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health. In Figure 2, we present the calculated VI maps of all VIs of the RGB image Figure 1-(a).
+
 <table class="center">
    <tr class="center">
     <td><img src= "https://user-images.githubusercontent.com/80779522/136771613-e153e5e7-4f81-4ff0-9832-667e636e1c4a.png" align="center" width="240"/></td>
@@ -79,9 +84,10 @@ For example:
   </tr>  
  </table>
  <figcaption align = "center"><p align="center"><b> 
-  Figure 3. Image representations of the four calculated VIs. </b></figcaption>
+  Figure 2. Image representations of the four calculated VIs. </b></figcaption>
 
-The  estimated  VI  maps  are  displayed with a red-green  color-map  by  using  the  appropriate  scale, where the lower index values are demonstrated with red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health.                                                                                                                  
+
+                                                                                                                 
                                                                                                                            
 ## Dependencies 
 Install all the neccecary dependencies using ```pip3 install <package name>```
