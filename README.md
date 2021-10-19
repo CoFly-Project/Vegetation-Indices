@@ -30,20 +30,20 @@ and their corresponding *__indices arrays__*. The available indices are:
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 
 
-<p align="center">
+<!-- <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/137870426-3c3bb34e-7429-4fbc-b819-f30542167ce7.png" width="300" />
 <figcaption align = "center"><p align="center"><b> 
   Figure 1. Workflow of the Vegetation-Indices module. 
   </b></figcaption>
-</figure>
+</figure> -->
 
-The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module. In Figure 2, we present the above workflow with a given input image in order to calculate the VARI index.
+The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module. In Figure 2, we present the workflow of this developed tool with a given input image in order to calculate the VARI index.
 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/137873378-ec3020bc-1879-4837-92e0-2922c128f7c0.png" width="400" />
 <figcaption align = "center"><p align="center"><b> 
-  Figure 2. The pipeline of the Vegetation-Indices module with input (a) a given image, and outputs the calculated (b) VARI image representation and its corrsponding *.npy file (VARI.npy).</b></figcaption>
+  Figure 2. Workflow of the Vegetation-Indices module based on (a) an input image, the extracted (b) VARI image representation and its corrsponding *.npy file (VARI.npy).</b></figcaption>
 </figure>
 
 
