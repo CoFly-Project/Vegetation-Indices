@@ -23,8 +23,10 @@ and their corresponding *__indices arrays__*. The available indices are:
 </div>
 <figcaption align = "center"><p align="center"><b>Table 1. Available VIs, where G=green band, R = red band and B = blue band of the input image.</b></figcaption>
 </figure>
-  
-  
+
+
+
+
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.npy``` files  are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.
 
