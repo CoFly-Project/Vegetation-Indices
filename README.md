@@ -43,9 +43,8 @@ The results of ```Vegetation-Indices``` module are ```*.png``` and ```*.npy``` f
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/137873378-ec3020bc-1879-4837-92e0-2922c128f7c0.png" width="400" />
 <figcaption align = "center"><p align="center"><b> 
-  Figure 2. The results of the Vegetation-Indices module for VARI index. </b></figcaption>
+  Figure 2. The pipeline of the Vegetation-Indices module with input (a) a given image, and outputs the calculated (b) VARI image representation and its corrsponding *.npy file (VARI.npy).</b></figcaption>
 </figure>
-
 
 
 
