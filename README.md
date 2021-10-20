@@ -28,7 +28,7 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 
 
 <!-- <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/138071694-02ef97da-3eae-4978-a832-5341bbbcf513.png" width="300" />
+<img src="https://user-images.githubusercontent.com/80779522/138075476-984e9c20-7fe3-4bc6-8abc-0129caf50606.png" width="300" />
 <figcaption align = "center"><p align="center"><b> 
   Figure 1. Workflow of the Vegetation-Indices module. 
   </b></figcaption>
@@ -58,9 +58,9 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
 
 **ARGUMENTS**
   
-* ```--input_image``` refers to the absolute path of the input image
-* ```--output_path``` corresponds to the absolute path where the extracted VI maps and their corresponding ```*.npy``` files will be saved. 
-* ```--vis``` corresponds to the short names of VIs
+* ```--input_image``` refers to the path of the input image
+* ```--output_path``` corresponds to the path where the extracted VIs (.npy) and the corresponding images (.png) files are saved. 
+* ```--vis``` corresponds to the short names of VIs. The default value corresponds to the four VIs. 
   
 For example:
   ```
