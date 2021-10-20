@@ -18,7 +18,7 @@ and their corresponding *__indices arrays__*. The available indices are shown in
 | NGBDI | Normalized Green Blue Difference Index|![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-B%7D%7BG&plus;B%7D)|
 
 </div>
-<figcaption align = "center"><p align="center"><b>Table 1. Available VIs, where G, R and B denote the green, red and blue bands, respectively.</b></figcaption>
+<figcaption align = "center"><p align="center"><b>Table 1. Available VIs, where G, R and B denote the green, red and blue band, respectively.</b></figcaption>
 </figure>
 
 
