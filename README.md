@@ -89,7 +89,7 @@ For example:
   </tr>  
  </table>
 <figcaption align = "center"><p align="center"><b> 
-  Figure 2. Image representations of the four calculated VIs 2.(b)-(e) based on a given image 2.(a).
+  Figure 2. Image representations of the four calculated VIs (b)-(e) based on a given image (a).
 </figure>
   
 
