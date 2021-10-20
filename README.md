@@ -34,7 +34,7 @@ Each one of the four selected VIs represents the actual reflectance of the exami
   </b></figcaption>
 </figure> -->
 
-The output of ```Vegetation-Indices``` module is the calculated index *(numpy array)*  and an image representation *(png file)* of it. The extracted files are named according to the corresponding VI, e.g vari.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module.In Figure 1, we present the workflow of this developed tool with a given input image in order to calculate the VARI index.
+The output of ```Vegetation-Indices``` module is the calculated index *(numpy array)*  and an image representation *(png file)* of it. The extracted files are named according to the corresponding VI, e.g vari.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module. In Figure 1, we present the workflow of this developed tool with a given input image in order to calculate the VARI index.
 
 <!--```*.png``` and ```*.npy``` files (one for each vegetation index). The ```*.png``` files are image representations of the estimated VIs and the ```*.npy``` files represent their numpy arrays and are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module. In Figure 1, we present the workflow of this developed tool with a given input image in order to calculate the VARI index.
 
