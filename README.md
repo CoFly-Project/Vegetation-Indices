@@ -18,7 +18,7 @@ and their corresponding *__indices arrays__*. The available indices are shown in
 | NGBDI | Normalized Green Blue Difference Index|![](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-B%7D%7BG&plus;B%7D)|
 
 </div>
-<figcaption align = "center"><p align="center"><b>Table 1. Available VIs, where G, R and B denote the green, red and blue band of the RGB input, respectively.</b></figcaption>
+<figcaption align = "center"><p align="center">Table 1. Available VIs, where G, R and B denote the green, red and blue band of the RGB input, respectively.</figcaption>
 </figure>
 
 
@@ -31,8 +31,8 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/138075476-984e9c20-7fe3-4bc6-8abc-0129caf50606.png" width="400" />
-<figcaption align = "center"><p align="center"><b> 
-  Figure 1. Workflow of the Vegetation-Indices module.</b></figcaption>
+<figcaption align = "center"><p align="center">
+  Figure 1. Workflow of the Vegetation-Indices module.</figcaption>
 </figure>
 
 <!-- based on (a) an input image and the extracted (b) VARI image representation with its corrsponding *.npy file (VARI.npy) -->
@@ -78,7 +78,7 @@ For example:
     <td>(e) NGBDI</td> 
   </tr>  
  </table>
-<figcaption align = "center"><p align="center"><b> 
+<figcaption align = "center"><p align="center"> 
   Figure 2. Image representations of the four calculated VIs (b)-(e) based on a given image (a).
 </figure>
   
