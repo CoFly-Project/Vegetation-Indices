@@ -39,7 +39,7 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/138069371-4f15ce5f-bccd-473b-8c86-c24cc64e74fc.png" width="400" />
+<img src="https://user-images.githubusercontent.com/80779522/138071694-02ef97da-3eae-4978-a832-5341bbbcf513.png" width="400" />
 <figcaption align = "center"><p align="center"><b> 
   Figure 1. Workflow of the Vegetation-Indices module.</b></figcaption>
 </figure>
