@@ -28,7 +28,7 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 
 
 <!-- <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/137870426-3c3bb34e-7429-4fbc-b819-f30542167ce7.png" width="300" />
+<img src="https://user-images.githubusercontent.com/80779522/138071694-02ef97da-3eae-4978-a832-5341bbbcf513.png" width="300" />
 <figcaption align = "center"><p align="center"><b> 
   Figure 1. Workflow of the Vegetation-Indices module. 
   </b></figcaption>
