@@ -22,8 +22,6 @@ and their corresponding *__indices arrays__*. The available indices are shown in
 </figure>
 
 
-
-
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 
 
@@ -53,7 +51,7 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
   
 * ```--input_image``` refers to the path of the input image
 * ```--output_path``` corresponds to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.png)``` files are saved. 
-* ```--vis``` corresponds to the short names of VIs. By default the four VIs of Table 1 are calculated.
+* ```--vis``` corresponds to the abbreviation of VIs. By default the four VIs of Table 1 are calculated.
   
 For example:
   ```
