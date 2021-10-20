@@ -94,7 +94,7 @@ For example:
 </figure>
   
 
-The estimated VI maps are displayed with a red-green color-map by using the appropriate scale, where the lower index values are demonstrated with red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health. 
+The estimated VI maps are displayed with a red-green color-map by using the appropriate scale, where the lower index values are demonstrated with red color while higher index values correspond to green. Each VI map is unique as takes into account different aspects of plant health. 
 
                                                                                                                  
                                                                                                                            
