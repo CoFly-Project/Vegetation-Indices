@@ -3,10 +3,7 @@
   
 # Vegetation Indices
 
-The main objective of this module is to enhance the capacities of the CoFly Project towards a cognitive precision agriculture system, in order to estimate the vegetation health 
-of the examined field region. To achieve that, the given input image is further processed by the *__Vegetation Indices (VIs)__* module in order to extract the *__VIs maps__*
-and their corresponding *__indices arrays__*. The available indices are shown in the Table 1.
-
+The main objective of this module is to estimate the vegetation health of an examined field region by calculating a set of Vegetation Indices (VIs). To achieve that, an input RGB image is processed in order to extract the following VIs:
 
 <div align="center">
   
