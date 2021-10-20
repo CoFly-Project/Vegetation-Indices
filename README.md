@@ -55,7 +55,7 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
   
 For example:
   ```
-  python index_calculation.py --input_image C:\Users\...\input_image.png --output_path C:\Users\...\output_folder --vis vari gli
+  python3 index_calculation.py --input_image ./input_image.png --output_path ./output_folder --vis vari gli
   ```
   
 ## Results
@@ -83,7 +83,7 @@ For example:
 </figure>
   
 
-The estimated VI maps are displayed with a red-green color-map by using the appropriate scale, where the lower index values are demonstrated with red color while higher index values correspond to green. Each VI map is unique as takes into account different aspects of plant health. 
+The estimated VI maps are displayed with a red-green color-map by using the appropriate scale, where lower index values correspond to red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health. 
 
                                                                                                                  
                                                                                                                            
