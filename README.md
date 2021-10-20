@@ -27,19 +27,12 @@ and their corresponding *__indices arrays__*. The available indices are shown in
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 
 
-<!-- <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/138075476-984e9c20-7fe3-4bc6-8abc-0129caf50606.png" width="300" />
-<figcaption align = "center"><p align="center"><b> 
-  Figure 1. Workflow of the Vegetation-Indices module. 
-  </b></figcaption>
-</figure> -->
-
 The output of ```Vegetation Indices``` module is the calculated index *(numpy array)*  and an image representation *(png file)* of it. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module. In Figure 1, we present an overview of the developed module.
 
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/138071694-02ef97da-3eae-4978-a832-5341bbbcf513.png" width="400" />
+<img src="https://user-images.githubusercontent.com/80779522/138075476-984e9c20-7fe3-4bc6-8abc-0129caf50606.png" width="400" />
 <figcaption align = "center"><p align="center"><b> 
   Figure 1. Workflow of the Vegetation-Indices module.</b></figcaption>
 </figure>
