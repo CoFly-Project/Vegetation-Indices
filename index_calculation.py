@@ -75,7 +75,7 @@ parser.add_argument('--input_image', required=True,
 parser.add_argument('--output_path', required=True,
 			  help="Please enter the absolute path of the output path.")
 
-parser.add_argument('--vis', nargs = '*',
+parser.add_argument('--vis', nargs="*", required=False,
 			  help="Please enter the short name of the Vegetation Index/Indices.")
 
 args = parser.parse_args()
@@ -83,16 +83,11 @@ args = parser.parse_args()
 img_path = os.path.abspath(args.input_image)
 img_name = os.path.basename(img_path)
 save_dir = os.path.abspath(args.output_path)
-index = args.vis
 
-os.chdir(img_path.split(img_name)[0])
-
-
-# -- Check for the arguments if they are None -- #
-if index == None:
-	index = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
-
-index  = [elem.upper() for elem in index]
+if len(args.vis) == 0:
+	args.vis = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
+else:
+	args.vis = [elem.upper() for elem in args.vis]
 
 img_4ch = cv2.imread(img_name, cv2.IMREAD_UNCHANGED)
 img = img_4ch[:, :, :3].astype(np.float)
