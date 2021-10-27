@@ -19,6 +19,10 @@ The main objective of this module is to estimate the vegetation health of an exa
 </figure>
 
 
+
+
+
+
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 
 
