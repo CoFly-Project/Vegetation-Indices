@@ -100,7 +100,7 @@ print('Processing image with shape {} x {}'.format(img.shape[0], img.shape[1]))
 
 Idx = Indexes(img)
 
-for i in index:
+for i in args.vis:
 	# -- Calculate index -- #
 	idx = Idx.get_index(i)
 
