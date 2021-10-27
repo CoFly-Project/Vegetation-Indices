@@ -9,7 +9,7 @@ The main objective of this module is to estimate the vegetation health of an exa
   
 | Vegetation Index | Name | Formula |  
 | :---: | :---: | :---: |
-| VARI  | Visible Atmospheric Resistant Index   |![equation](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-R%7D%7BG&plus;R-B%7D)|
+| VARI  | Visible Atmospheric Resistant Index   |![equation](https://latex2png.com/pngs/77c63f60ea31c1f8551bb23f09dd11a4.png)|
 | GLI   | Green Leaf Index                      |![equation](https://latex.codecogs.com/gif.latex?%5Cfrac%7B2%5Ctimes%20G-R-B%7D%7B2%5Ctimes%20G&plus;R&plus;B%7D)|
 | NGRDI | Normalized Green Red Difference Index |![equation](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-R%7D%7BG&plus;R%7D)|
 | NGBDI | Normalized Green Blue Difference Index|![equation](https://latex.codecogs.com/gif.latex?%5Cfrac%7BG-B%7D%7BG&plus;B%7D)|
