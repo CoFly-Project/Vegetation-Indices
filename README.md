@@ -92,10 +92,10 @@ The estimated VI maps are displayed with a red-green color-map by using the appr
 Install all the neccecary dependencies using ```pip3 install <package name>```
   
 Required packages:
-  * numpy   
-  * matplotlib 
-  * opencv-python
-  * argparse
+  * numpy (version >= 1.21.3)
+  * matplotlib (version >= 3.2.2)
+  * opencv-python (version >= 4.5.3)
+  * argparse (version >= 1.1)
     
     
 ## Citation
