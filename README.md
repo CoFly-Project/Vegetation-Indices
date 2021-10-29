@@ -18,11 +18,6 @@ The main objective of this module is to estimate the vegetation health of an exa
 <figcaption align = "center"><p align="center">Table 1. Available VIs, where G, R and B denote the green, red and blue band of the RGB input, respectively.</figcaption>
 </figure>
 
-
-
-
-
-
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 
 
