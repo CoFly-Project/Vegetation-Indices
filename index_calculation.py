@@ -168,7 +168,6 @@ for index_name in args.vis:
 	
 	rgba = np.array(img, dtype=np.float32)
 
-
 	ds = gdal.Open(img_path, gdal.GA_ReadOnly)
 	prj = ds.GetProjection()
 
