@@ -161,9 +161,9 @@ for index_name in args.vis:
 	cNorm = mpl.colors.Normalize(vmax=upper, vmin=lower)
 	colored_image = cm(cNorm(index_clipped))
 	if ch==4:
-		mode=='RGBA'
+		mode = 'RGBA'
 	else:
-		mode=='RGB'
+		mode = 'RGB'
 	img = Image.fromarray(np.uint8(colored_image * 255), mode=mode)
 	
 	rgba = np.array(img, dtype=np.float32)
