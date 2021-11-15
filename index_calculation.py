@@ -2,11 +2,12 @@ import os
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-import argparse
+import sys
 import textwrap
+from PIL import Image
+import matplotlib as mpl
+from osgeo import gdal, osr
 
-
-# -- Create a class for calculating the vegetation_index -- #
 class Indexes:
 	def __init__(self, img):
 		self.img = img
@@ -15,8 +16,6 @@ class Indexes:
 		self.B = self.img[:, :, 0].astype(np.float32)
 
 
-	# All these operations aim to not have ZeroDivisionError -- #
-	# -- Visible Atmospheric Resistant Index -- #
 	def VARI(self):
 		vari = np.divide((self.G - self.R), (self.G + self.R - self.B + 0.00001))
 		return np.clip(vari, -1, 1) # -- VI values outside the [-1, 1] are clipped to this interval edges. -- #
@@ -31,13 +30,10 @@ class Indexes:
 		v_ndvi = np.divide((self.G - self.R), (self.G + self.R + 0.00001))
 		return np.clip(v_ndvi, -1, 1)
 
-	# -- Normalized Green Blue Difference Index -- #
 	def NGBDI(self): 
 		ngbdi = (self.G - self.B) / (self.G + self.B + 0.00001)
-		ngbdi = np.clip(ngbdi, -1, +1)
-		return ngbdi
+		return np.clip(ngbdi, -1, +1)
 
-	# --  Identification of the Idx object -- #
 	def get_index(self, index_name):
 		if index_name == 'VARI':
 			return self.VARI()
@@ -50,8 +46,6 @@ class Indexes:
 		else:
 			print('Uknown index')
 
-
-# -- Find the real values of the min, max based on the frequency of the vegetation_index histogramm' s bin in each examined interval -- #
 def find_real_min_max(perc, edges, index_clear):
 	mask = perc > (0.05 * len(index_clear))
 	edges = edges[:-1]
@@ -59,74 +53,91 @@ def find_real_min_max(perc, edges, index_clear):
 	max_v = edges[mask].max()
 	return min_v, max_v
 
-# -- A necessary message for the arguments
-parser = argparse.ArgumentParser(epilog = textwrap.dedent('''\
-						        The available VIs are:
-						        1. Visible Atmospheric Resistant Index (VARI)
-						        2. Green Leaf Index (GLI)
-						        3. Normalized Green Red Difference Index (NGRDI)
-						        4. Normalized Green Blue Difference Index (NGBDI)
-						        '''), formatter_class=argparse.RawTextHelpFormatter)
+def array_to_raster(output_path, ds_reference, array, name):
+	gdal.AllRegister()
+	ds_ref = gdal.Open(ds_reference, gdal.GA_ReadOnly)
 
-# -- Parsing the args -- #
-parser.add_argument('--input_image', required=True,
-			  help="Please enter the absolute path of the input image.")
+	rows, cols, band_num = array.shape
 
-parser.add_argument('--output_path', required=True,
-			  help="Please enter the absolute path of the output path.")
+	driver = gdal.GetDriverByName("GTiff")
 
-parser.add_argument('--vis', nargs="*", required=False,
-			  help="Please enter the short name of the Vegetation Index/Indices.")
+	outRaster = driver.Create(os.path.join(output_path, name+'.tif'), cols, rows, band_num, gdal.GDT_Float32, options=["COMPRESS=DEFLATE"])
+	originX, pixelWidth, b, originY, d, pixelHeight = ds_ref.GetGeoTransform()
+	outRaster.SetGeoTransform((originX, pixelWidth, 0, originY, 0, pixelHeight))
 
-args = parser.parse_args()
+	descriptions = ['Red Band', 'Green Band', 'Blue Band', 'Alpha Band', 'Index Array']
+	for b in range(band_num):
+		outband = outRaster.GetRasterBand(b+1)
+		outband.WriteArray(array[:,:,b])
+		outband.SetDescription(descriptions[b])
+		if b+1==1:
+			outRaster.GetRasterBand(1).SetColorInterpretation(gdal.GCI_RedBand)
+		elif b+1==2:
+			outRaster.GetRasterBand(2).SetColorInterpretation(gdal.GCI_GreenBand)
+		elif b+1==3:
+			outRaster.GetRasterBand(3).SetColorInterpretation(gdal.GCI_BlueBand)
+		elif b+1==4:
+			outRaster.GetRasterBand(4).SetColorInterpretation(gdal.GCI_AlphaBand)
+		else:
+			outRaster.GetRasterBand(5).SetColorInterpretation(gdal.GCI_Undefined)
+		
+	prj = ds_ref.GetProjection()
+	outRasterSRS = osr.SpatialReference(wkt=prj)
+	outRaster.SetProjection(outRasterSRS.ExportToWkt())
+	driver = None
+	outband.FlushCache()
 
-img_path = os.path.abspath(args.input_image)
-img_name = os.path.basename(img_path)
-save_dir = os.path.abspath(args.output_path)
+	return outRaster
+		
+		
+def winapi_path(dos_path, encoding=None):
+    if (not isinstance(dos_path, str) and encoding is not None): 
+        dos_path = dos_path.decode(encoding)
+    path = os.path.abspath(dos_path)
+    if path.startswith(u"\\\\"):
+        return u"\\\\?\\UNC\\" + path[2:]
+    return u"\\\\?\\" + path
 
-if len(args.vis) == 0:
-	args.vis = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
-else:
-	args.vis = [elem.upper() for elem in args.vis]
 
-img_4ch = cv2.imread(img_name, cv2.IMREAD_UNCHANGED)
-img = img_4ch[:, :, :3].astype(np.float)
+img_path = winapi_path(sys.argv[1])
+path_1, path_2 = img_path.split('\\docker_stitching\\')
+project_name = path_2.split('\\')[0]
+save_dir = winapi_path(os.path.join(sys.argv[2], project_name))
+os.makedirs(save_dir, exist_ok=True)
+os.environ['GDAL_DATA'] = winapi_path(os.path.join(os.getcwd(), 'gdal'))
+os.environ['PROJ_LIB'] = winapi_path(os.path.join(os.getcwd(), 'proj'))
+
+os.chdir(save_dir)
+img_4ch = cv2.imread(img_path, cv2.IMREAD_UNCHANGED)
+img = img_4ch[:, :, :3].astype(float)
 img[img_4ch[:, :, 3] == 0] = np.nan
 empty_space = img_4ch[:, :, 3] == 0
 
-# -- Print function for testing reasons -- #
 print('Processing image with shape {} x {}'.format(img.shape[0], img.shape[1]))
 
-
+indices_names = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
 Idx = Indexes(img)
 
-for i in args.vis:
-	# -- Calculate index -- #
-	idx = Idx.get_index(i)
-
+for index_name in indices_names:
+	idx = Idx.get_index(index_name)
 
 	index_clear = idx[~np.isnan(idx)]
 
-	# -- Calculate index histogram -- #
 	perc, edges, _ = plt.hist(index_clear, bins=100, range=(-1, 1), color='darkcyan', edgecolor='black')
-
-	# -- Find the real min, max values of the vegetation_index -- #
-	lower, upper = find_real_min_max(perc, edges, index_clear)
-
-	# -- Plot and save the vegetation_index -- #
-	f = plt.figure()
-	f.set_figheight(idx.shape[0]/f.get_dpi())
-	f.set_figwidth(idx.shape[1]/f.get_dpi())
-	ax = plt.Axes(f, [0., 0., 1., 1.])
-	ax.set_axis_off()
-	f.add_axes(ax)
-	ax.imshow(np.clip(idx, lower, upper), cmap='RdYlGn', aspect='auto')
-	f.savefig('{}/{}.png'.format(save_dir, i), transparent=True)
 	plt.close()
 
-	# -- The *.npy files are useful for the Problematic Areas Detection module -- # 
+	lower, upper = find_real_min_max(perc, edges, index_clear)
 	index_clipped = np.clip(idx, lower, upper)
-	np.save('{}/{}_clipped.npy'.format(save_dir, i), index_clipped)
+		
+	cm = plt.get_cmap('RdYlGn')
+	norm = plt.Normalize(0, 1)
+	cNorm = mpl.colors.Normalize(vmax=upper, vmin=lower)
+	colored_image = cm(cNorm(index_clipped))
+	img = Image.fromarray(np.uint8(colored_image * 255), mode='RGBA')
 
-# -- Print function for testing reasons -- #	
+	rgba = np.array(img, dtype=np.float32)
+
+	array_5ch = np.dstack((rgba, index_clipped))
+	array_to_raster(save_dir, img_path, array_5ch, index_name)
+	
 print('Done!')
