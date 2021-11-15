@@ -31,7 +31,7 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
   Figure 1. Workflow of the Vegetation-Indices module.</figcaption>
 </figure>
 
-<!-- based on (a) an input image and the extracted (b) VARI image representation with its corrsponding *.npy file (VARI.npy) -->
+based on (a) an input image and the extracted (b) VARI image representation with its corrsponding *.npy file (VARI.npy)
 
 
 ## How to Run
@@ -98,4 +98,5 @@ Required packages:
 
 ## Acknowledgment
 This research has been financed by the European Regional Development Fund of the European Union and Greek national funds through the Operational Program Competitiveness, Entrepreneurship and Innovation, under the call RESEARCH - CREATE - INNOVATE (T1EDK-00636).
+
  -->
