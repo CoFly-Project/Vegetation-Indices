@@ -160,7 +160,11 @@ for index_name in args.vis:
 	cm = plt.get_cmap('RdYlGn')
 	cNorm = mpl.colors.Normalize(vmax=upper, vmin=lower)
 	colored_image = cm(cNorm(index_clipped))
-	img = Image.fromarray(np.uint8(colored_image * 255), mode='RGBA')
+	if ch==4:
+		mode=='RGBA'
+	else:
+		mode=='RGB'
+	img = Image.fromarray(np.uint8(colored_image * 255), mode=mode)
 	
 	rgba = np.array(img, dtype=np.float32)
 
