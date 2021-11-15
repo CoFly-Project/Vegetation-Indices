@@ -132,7 +132,7 @@ os.chdir(os.path.dirname(img_path))
 img = cv2.imread(img_name, cv2.IMREAD_UNCHANGED)
 h, w, ch = img.shape
 
-if ch==4:
+if ch > 3:
 	image = img[:, :, :3].astype(float)
 	image[img[:, :, 3] == 0] = np.nan
 	empty_space = img[:, :, 3] == 0
