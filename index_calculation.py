@@ -131,6 +131,7 @@ os.chdir(os.path.dirname(img_path))
 
 img = cv2.imread(img_name, cv2.IMREAD_UNCHANGED)
 h, w, ch = img.shape
+
 if ch==4:
 	image = img[:, :, :3].astype(float)
 	image[img[:, :, 3] == 0] = np.nan
@@ -160,6 +161,7 @@ for index_name in args.vis:
 	cm = plt.get_cmap('RdYlGn')
 	cNorm = mpl.colors.Normalize(vmax=upper, vmin=lower)
 	colored_image = cm(cNorm(index_clipped))
+	
 	if ch==4:
 		mode = 'RGBA'
 	else:
