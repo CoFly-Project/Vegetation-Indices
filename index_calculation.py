@@ -104,8 +104,6 @@ path_1, path_2 = img_path.split('\\docker_stitching\\')
 project_name = path_2.split('\\')[0]
 save_dir = winapi_path(os.path.join(sys.argv[2], project_name))
 os.makedirs(save_dir, exist_ok=True)
-os.environ['GDAL_DATA'] = winapi_path(os.path.join(os.getcwd(), 'gdal'))
-os.environ['PROJ_LIB'] = winapi_path(os.path.join(os.getcwd(), 'proj'))
 
 os.chdir(save_dir)
 img_4ch = cv2.imread(img_path, cv2.IMREAD_UNCHANGED)
