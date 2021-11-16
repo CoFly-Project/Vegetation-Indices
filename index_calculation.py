@@ -63,12 +63,12 @@ def find_real_min_max(perc, edges, index_clear):
 	return min_v, max_v
 
 # -- Function that creates the georeferenced VI map -- #
-def array_to_raster(output_path, ds_reference, array, name):
+def array_to_raster(output_path, ds_reference, array, name1, name2):
 	rows, cols, band_num = array.shape
 
 	driver = gdal.GetDriverByName("GTiff")
 
-	outRaster = driver.Create(os.path.join(output_path, name+'.tif'), cols, rows, band_num, gdal.GDT_Byte, options=["COMPRESS=DEFLATE"])
+	outRaster = driver.Create(os.path.join(output_path, name1+'_'+name2+'.tif'), cols, rows, band_num, gdal.GDT_Byte, options=["COMPRESS=DEFLATE"])
 	originX, pixelWidth, b, originY, d, pixelHeight = ds_reference.GetGeoTransform()
 	outRaster.SetGeoTransform((originX, pixelWidth, 0, originY, 0, pixelHeight))
 
@@ -95,7 +95,7 @@ def array_to_raster(output_path, ds_reference, array, name):
 	print('Georeferenced {} map was extracted!'.format(index_name))
 
 	return outRaster
-		
+
 # -- Arguments -- #	
 parser = argparse.ArgumentParser(prog='index_calculation', description = textwrap.dedent('''\
 								The available VIs are:
@@ -109,7 +109,7 @@ parser = argparse.ArgumentParser(prog='index_calculation', description = textwra
 parser.add_argument('--input_image', required=True,
 			  help="Please enter the absolute path of the input image.")
 
-parser.add_argument('--output_path', required=True,
+parser.add_argument('--output_path', nargs='?',
 			  help="Please enter the absolute path of the output path.")
 
 parser.add_argument('--vis', nargs="*", required=False,
@@ -119,11 +119,18 @@ args = parser.parse_args()
 
 img_path = os.path.abspath(args.input_image)
 img_name = os.path.basename(img_path)
-save_dir = os.path.abspath(args.output_path)
+name, ext = os.path.splitext(img_name)
+
+if args.output_path==None: 
+	os.makedirs('results', exist_ok=True)
+	save_dir = os.path.join(os.getcwd(), 'results')
+else:
+	save_dir = os.path.abspath(args.output_path)
 
 if len(args.vis) == 0:
 	args.vis = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
 	print('All VIs will be calculated!')
+
 else:
 	args.vis = [elem.upper() for elem in args.vis]
 
@@ -170,11 +177,11 @@ for index_name in args.vis:
 	prj = ds.GetProjection()
 
 	if prj: 
-		array_to_raster(save_dir, ds, rgba, index_name)	
+		array_to_raster(save_dir, ds, rgba, name, index_name)	
 	else:
-		img.save('{}/{}.png'.format(save_dir, index_name))
+		img.save('{}/{}_{}.png'.format(save_dir, name, index_name))
 		print('Non georeferrenced {} map was extracted'.format(index_name))
 
-	np.save('{}/{}.npy'.format(save_dir, index_name), index_clipped)
+	np.save('{}/{}_{}.npy'.format(save_dir, name, index_name), index_clipped)
 	
 print('Done!')
