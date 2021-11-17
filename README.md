@@ -21,7 +21,7 @@ The main objective of this module is to estimate the vegetation health of an exa
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 
 
-The output of ```Vegetation Indices``` module is the calculated index *(numpy array)*  and an image representation *(png file)* of it. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module. In Figure 1, we present an overview of the developed module.
+The output of ```Vegetation Indices``` module is the calculated index *(numpy array)*  and an image representation *(png or tif file)* of it. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module. In Figure 1, we present an overview of the developed module.
 
 
 
@@ -46,7 +46,7 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
 **ARGUMENTS**
   
 * ```--input_image``` refers to the path of the input image
-* ```--output_path``` corresponds to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.png)``` files are saved. 
+* ```--output_path``` corresponds to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.png or *.tif)``` files are saved. 
 * ```--vis``` corresponds to the selected VIs to be estimated. By default the module the four VIs of Table 1 are calculated. 
   
 For example:
