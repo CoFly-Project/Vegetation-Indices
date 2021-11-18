@@ -117,10 +117,6 @@ parser.add_argument('--vis', nargs="*", required=False,
 
 args = parser.parse_args()
 
-img_path = os.path.abspath(args.input_image)
-img_name = os.path.basename(img_path)
-name, ext = os.path.splitext(img_name)
-
 if args.output_path==None: 
 	os.makedirs('results', exist_ok=True)
 	save_dir = os.path.join(os.getcwd(), 'results')
@@ -130,9 +126,12 @@ else:
 if len(args.vis) == 0:
 	args.vis = ['VARI', 'GLI', 'NGRDI', 'NGBDI']
 	print('All VIs will be calculated!')
-
 else:
 	args.vis = [elem.upper() for elem in args.vis]
+	
+img_path = os.path.abspath(args.input_image)
+img_name = os.path.basename(img_path)
+name, ext = os.path.splitext(img_name)
 
 os.chdir(os.path.dirname(img_path))
 
