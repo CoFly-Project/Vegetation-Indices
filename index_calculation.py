@@ -106,15 +106,9 @@ parser = argparse.ArgumentParser(prog='index_calculation', description = textwra
 								'''), formatter_class=argparse.RawTextHelpFormatter)
 
 
-parser.add_argument('--input_image', required=True,
-			  help="Please enter the absolute path of the input image.")
-
-parser.add_argument('--output_path', nargs='?',
-			  help="Please enter the absolute path of the output path.")
-
-parser.add_argument('--vis', nargs="*", required=False,
-			  help="Please enter the abbreviation of the Vegetation Index/Indices.")
-
+parser.add_argument('--input_image', required=True, help="Please enter the absolute path of the input image.")
+parser.add_argument('--output_path', nargs='?', help="Please enter the absolute path of the output path.")
+parser.add_argument('--vis', nargs="*", required=False, help="Please enter the abbreviation of the Vegetation Index/Indices.")
 args = parser.parse_args()
 
 if args.output_path==None: 
