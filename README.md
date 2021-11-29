@@ -1,6 +1,7 @@
-<!-- <p align="center">
+<p align="center">
 <img src="https://user-images.githubusercontent.com/77329407/105342573-3040e900-5be9-11eb-92df-7c09392b1e0c.png" width="300" />
-  
+
+<!--
 # Vegetation Indices
 
 The main objective of this module is to estimate the vegetation health of an examined field region by calculating a set of Vegetation Indices (VIs). To achieve that, an input RGB image is processed in order to extract the following VIs:
