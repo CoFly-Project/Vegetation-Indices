@@ -172,7 +172,7 @@ for index_name in args.vis:
 	if prj: 
 		array_to_raster(save_dir, ds, rgba, name, index_name)	
 	else:
-		img.save('{}/{}_{}.png'.format(save_dir, name, index_name))
+		img.save('{}/{}_{}.tif'.format(save_dir, name, index_name))
 		print('Non georeferrenced {} map was extracted!'.format(index_name))
 
 	np.save('{}/{}_{}.npy'.format(save_dir, name, index_name), index_clipped)
