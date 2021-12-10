@@ -91,6 +91,7 @@ Required packages:
   * matplotlib (version >= 3.2.2)
   * opencv-python (version >= 4.5.3)
   * argparse (version >= 1.1)
+  * osgeo (version >= 3.2.3)
     
     
 ## Citation
