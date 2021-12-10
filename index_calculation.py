@@ -84,13 +84,24 @@ def array_to_raster(output_path, ds_reference, array, name):
 	outband.FlushCache()
 
 	return outRaster
+		
+		
+def winapi_path(dos_path, encoding=None):
+    if (not isinstance(dos_path, str) and encoding is not None): 
+        dos_path = dos_path.decode(encoding)
+    path = os.path.abspath(dos_path)
+    if path.startswith(u"\\\\"):
+        return u"\\\\?\\UNC\\" + path[2:]
+    return u"\\\\?\\" + path
 
 
-img_path = sys.argv[1]
+img_path = winapi_path(sys.argv[1])
 path_1, path_2 = img_path.split('\\docker_stitching\\')
 project_name = path_2.split('\\')[0]
-save_dir = os.path.join(sys.argv[2], project_name)
+save_dir = winapi_path(os.path.join(sys.argv[2], project_name))
 os.makedirs(save_dir, exist_ok=True)
+os.environ['GDAL_DATA'] = winapi_path(os.path.join(os.getcwd(), 'gdal'))
+os.environ['PROJ_LIB'] = winapi_path(os.path.join(os.getcwd(), 'proj'))
 
 os.chdir(save_dir)
 img_4ch = cv2.imread(img_path, cv2.IMREAD_UNCHANGED)
