@@ -4,7 +4,7 @@
 
 # Vegetation Indices
 
-<!--The main objective of this module is to estimate the vegetation health of an examined field region by calculating a set of Vegetation Indices (VIs). To achieve that, an input RGB image is processed in order to extract the following VIs:
+The main objective of this module is to estimate the vegetation health of an examined field region by calculating a set of Vegetation Indices (VIs). To achieve that, an input RGB image is processed in order to extract the following VIs:
 
 <div align="center">
   
@@ -22,7 +22,15 @@
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 
 
-The output of ```Vegetation Indices``` module is the calculated index *(numpy array)*  and an image representation *(png file)* of it. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection) module. In Figure 1, we present an overview of the developed module.
+
+
+The outputs of ```Vegetation Indices``` module are the aforementioned indices *(numpy array)*  and their corresponding image representations *(tif files)* of it. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be in the following suggested structure of folders (inside the “docker_stitching” folder).
+
+
+
+
+
+In Figure 1, we present an overview of the developed module.
 
 
 
@@ -99,5 +107,5 @@ Required packages:
 
 ## Acknowledgment
 This research has been financed by the European Regional Development Fund of the European Union and Greek national funds through the Operational Program Competitiveness, Entrepreneurship and Innovation, under the call RESEARCH - CREATE - INNOVATE (T1EDK-00636).
-
  -->
+
