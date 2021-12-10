@@ -24,7 +24,7 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 
 
 
-The outputs of ```Vegetation Indices``` module are the aforementioned indices *(numpy array)*  and their corresponding image representations *(tif files)* which are georeferenced based of the input image. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be in the following suitable structure folder, as displayed in Figure 1. 
+The outputs of ```Vegetation Indices``` module are the aforementioned indices *(numpy array)*  and their corresponding image representations *(tif files)* which are georeferenced based of the input image. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be in the following suitable structure folder (inside the __`docker_stitching`__ folder), as displayed in Figure 1. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/145552832-abfffbf3-995c-4321-aa73-d9c05ee2776e.png" width="320" />
@@ -32,7 +32,7 @@ The outputs of ```Vegetation Indices``` module are the aforementioned indices *(
   Figure 1. Folder structure of the input image.</figcaption>
 </figure>
 
-The results are stored in a folder that has the same name with the folder project_A. In Figure 2, we present an overview of the developed module based on (a) an input image and the extracted (b) VARI image representation with its corrsponding *.npy file (VARI.npy)
+The results are stored in a folder that has the same name with __`project_A`__ folder. In Figure 2, we present an overview of the developed module based on (a) an input image and the extracted (b) VARI image representation with its corrsponding *.npy file (VARI.npy)
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/138075476-984e9c20-7fe3-4bc6-8abc-0129caf50606.png" width="400" />
@@ -81,7 +81,7 @@ For example:
   </tr>  
  </table>
 <figcaption align = "center"><p align="center"> 
-  Figure 2. Image representations of the four calculated VIs (b)-(e) based on a given image (a).
+  Figure 3. Image representations of the four calculated VIs (b)-(e) based on a given image (a).
 </figure>
   
 
