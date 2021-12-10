@@ -57,7 +57,7 @@ The results are stored in a folder that has the same name with __`project_A`__ f
   
 For example:
   ```
-  python3 index_calculation.py "C:\Users\...\img_name.tif" "C:\Users\...\output_path"
+  python3 index_calculation.py "C:\Users\...\img_name.tif" "C:\Users\...\output"
   ```
   
 ## Results
