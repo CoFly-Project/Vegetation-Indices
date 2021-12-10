@@ -24,23 +24,21 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 
 
 
-The outputs of ```Vegetation Indices``` module are the aforementioned indices *(numpy array)*  and their corresponding image representations *(tif files)* of it. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be in the following suggested structure of folders (inside the “docker_stitching” folder).
+The outputs of ```Vegetation Indices``` module are the aforementioned indices *(numpy array)*  and their corresponding image representations *(tif files)* which are georeferenced based of the input image. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be in the following suitable structure folder, as displayed in Figure 1. 
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80779522/145552832-abfffbf3-995c-4321-aa73-d9c05ee2776e.png" width="320" />
+<figcaption align = "center"><p align="center">
+  Figure 1. Folder structure of the input image.</figcaption>
+</figure>
 
-
-
-
-In Figure 1, we present an overview of the developed module.
-
-
+The results are stored in a folder that has the same name with the folder project_A. In Figure 2, we present an overview of the developed module based on (a) an input image and the extracted (b) VARI image representation with its corrsponding *.npy file (VARI.npy)
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/138075476-984e9c20-7fe3-4bc6-8abc-0129caf50606.png" width="400" />
 <figcaption align = "center"><p align="center">
-  Figure 1. Workflow of the Vegetation-Indices module.</figcaption>
+  Figure 2. Workflow of the Vegetation-Indices module.</figcaption>
 </figure>
-
-based on (a) an input image and the extracted (b) VARI image representation with its corrsponding *.npy file (VARI.npy)
 
 
 ## How to Run
@@ -49,18 +47,17 @@ based on (a) an input image and the extracted (b) VARI image representation with
 2. Open terminal on ~REPO_PATH
 3. Run: 
 ```
-  python3 index_calculation.py --input_image ~IMAGE_PATH --output_path ~OUTPUT_PATH --vis ~SHORT_NAME_OF_VIs
+  python3 index_calculation.py ~IMAGE_PATH ~OUTPUT_PATH
 ```
 
 **ARGUMENTS**
   
-* ```--input_image``` refers to the path of the input image
-* ```--output_path``` corresponds to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.png)``` files are saved. 
-* ```--vis``` corresponds to the selected VIs to be estimated. By default the module the four VIs of Table 1 are calculated. 
+* ```~IMAGE_PATH``` refers to the path of the input image
+* ```~OUTPUT_PATH``` corresponds to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.tif)``` files are saved
   
 For example:
   ```
-  python3 index_calculation.py --input_image ./input_image.png --output_path ./output_folder --vis vari gli
+  python3 index_calculation.py "C:\Users\...\img_name.tif" "C:\Users\...\Desktop"
   ```
   
 ## Results
@@ -100,6 +97,7 @@ Required packages:
   * matplotlib (version >= 3.2.2)
   * opencv-python (version >= 4.5.3)
   * argparse (version >= 1.1)
+  * osgeo (version >= 3.2.3)
     
     
 ## Citation
@@ -107,5 +105,3 @@ Required packages:
 
 ## Acknowledgment
 This research has been financed by the European Regional Development Fund of the European Union and Greek national funds through the Operational Program Competitiveness, Entrepreneurship and Innovation, under the call RESEARCH - CREATE - INNOVATE (T1EDK-00636).
- -->
-
