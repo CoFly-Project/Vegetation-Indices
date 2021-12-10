@@ -21,7 +21,7 @@ The main objective of this module is to estimate the vegetation health of an exa
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 
 
-The output of ```Vegetation Indices``` module is the calculated index *(numpy array)*  and an image representation *(png or tif file)* of it. If the input image is georeferenced, then the VIs image representations are georeferenced as well, otherwise not. The extracted files are named according to the corresponding VI, e.g. *img_name_VARI.npy*. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/main) module. In Figure 1, we present an overview of the developed module.
+The output of ```Vegetation Indices``` module is the calculated index *(numpy array)*  and an image representation *(png or tif file)* of it. <!--If the input image is georeferenced, the extracted VIs image representations are georeferenced as well, otherwise not--> The extracted files are named according to the corresponding VI, e.g. *img_name_VARI.npy*. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/main) module. In Figure 1, we present an overview of the developed module.
 
 
 
@@ -45,8 +45,8 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
 
 **ARGUMENTS**
   
-* ```--input_image``` refers to the path of the input image
-* ```--output_path``` corresponds to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.png or *.tif)``` files are saved. 
+* ```--input_image``` corresponds to the path of the input image
+* ```--output_path```  refers to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.png or *.tif)``` files are saved. 
 * ```--vis``` corresponds to the selected VIs to be estimated. By default the module the four VIs of Table 1 are calculated. 
   
 For example:
@@ -81,8 +81,7 @@ For example:
 
 The estimated VI maps are displayed with a red-green color-map by using the appropriate scale, where lower index values correspond to red color while higher index values correspond to green color. Each VI map is unique as takes into account different aspects of plant health. 
 
-                                                                                                                 
-                                                                                                                           
+
 ## Dependencies 
 Install all the neccecary dependencies using ```pip3 install <package name>```
   
