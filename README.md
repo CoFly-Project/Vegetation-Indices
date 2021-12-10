@@ -21,7 +21,7 @@ The main objective of this module is to estimate the vegetation health of an exa
 Each one of the four selected VIs represents the actual reflectance of the examined field’s vegetation in different color bands and thus, it can reflect different measures of crop health.
 
 
-The output of ```Vegetation Indices``` module is the calculated index *(numpy array)*  and an image representation (*tif file)* of it. <!--If the input image is georeferenced, the extracted VIs image representations are georeferenced as well, otherwise not--> The extracted files are named according to the corresponding VI, e.g. *img_name_VARI.npy* and *img_name_VARI.tif*  . Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/main) module. In Figure 1, we present an overview of the developed module.
+The output of ```Vegetation Indices``` module is the calculated index *(numpy array)*  and an image representation (*tif file)* of it. <!--If the input image is georeferenced, the extracted VIs image representations are georeferenced as well, otherwise not--> The extracted files are named according to the corresponding name of the input image and VI, e.g. *img_name_VARI.npy* and *img_name_VARI.tif*  . Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/main) module. In Figure 1, we present an overview of the developed module.
 
 
 
