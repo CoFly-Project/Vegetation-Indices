@@ -24,7 +24,11 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 
 
 
-The output of ```Vegetation Indices``` module is the calculated aforementioned indices *(numpy arrays)*  and their corresponding image representations *(tif files)*. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be in the following suitable structure folder (inside the __`docker_stitching`__ folder), as displayed in Figure 1. 
+The output of ```Vegetation Indices``` module is the calculated aforementioned indices *(numpy arrays)*  and their corresponding image representations *(tif files)*. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. 
+
+It's required the input image should be contained in a folder inside the folder named __```docker_stitching```__, as displayed in Figure 1.  
+In Figure 2, we present an overview of the developed module.  
+  
 
 <!-- <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/145552832-abfffbf3-995c-4321-aa73-d9c05ee2776e.png" width="320" />
@@ -39,7 +43,7 @@ The output of ```Vegetation Indices``` module is the calculated aforementioned i
 </figure>
 
 
-The results are stored in a folder that has the same name with __`project_A`__ folder. In Figure 2, we present an overview of the developed module.
+<!-- The results are stored in a folder that has the same name with __`project_A`__ folder. In Figure 2, we present an overview of the developed module. -->
 
 <!-- In Figure 2, we present an overview of the developed module based on (a) an input image and the extracted (b) VARI image representation with its corrsponding *.npy file (VARI.npy)
  -->
@@ -74,7 +78,7 @@ The results are stored in a folder that has the same name with __`project_A`__ f
   
 For example:
   ```
-  python3 index_calculation.py ./input_image.tif ./output_path
+  python3 index_calculation.py ./docker_stitching/.../input_image.tif ./output_path
   ```
   
 ## Results
