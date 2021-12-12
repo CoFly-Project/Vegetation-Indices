@@ -24,7 +24,7 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 
 
 
-The outputs of ```Vegetation Indices``` module are the aforementioned indices *(numpy array)*  and their corresponding image representations *(tif files)* which are georeferenced based of the input image. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be in the following suitable structure folder (inside the __`docker_stitching`__ folder), as displayed in Figure 1. 
+The outputs of ```Vegetation Indices``` module are the aforementioned indices *(numpy arrays)*  and their corresponding image representations *(tif files)* which are georeferenced based of the input image. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be in the following suitable structure folder (inside the __`docker_stitching`__ folder), as displayed in Figure 1. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/145552832-abfffbf3-995c-4321-aa73-d9c05ee2776e.png" width="320" />
@@ -57,11 +57,9 @@ The results are stored in a folder that has the same name with __`project_A`__ f
   
 For example:
   ```
-  python3 index_calculation.py "C:\Users\...\input_image.tif" "C:\Users\...\output_folder"
+  python3 index_calculation.py "C:\Users\...\img_name.tif" "C:\Users\...\output"
   ```
   
-<!--   python3 index_calculation.py --input_image ./input_image.png --output_path ./output_folder --vis vari gli
-   -->
 ## Results
 **Visualizations**
 
