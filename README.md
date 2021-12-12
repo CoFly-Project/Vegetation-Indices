@@ -57,9 +57,11 @@ The results are stored in a folder that has the same name with __`project_A`__ f
   
 For example:
   ```
-  python3 index_calculation.py "C:\Users\...\img_name.tif" "C:\Users\...\output"
+  python3 index_calculation.py "C:\Users\...\input_image.tif" "C:\Users\...\output_folder"
   ```
   
+<!--   python3 index_calculation.py --input_image ./input_image.png --output_path ./output_folder --vis vari gli
+   -->
 ## Results
 **Visualizations**
 
