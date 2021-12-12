@@ -24,14 +24,20 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 
 
 
-The output of ```Vegetation Indices``` module is the calculated aforementioned indices *(numpy arrays)*  and their corresponding image representations *(tif files)*. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be contained in a folder inside the folder named __`docker_stitching`__, as displayed in Figure 1. 
+The output of ```Vegetation Indices``` module is the calculated aforementioned indices *(numpy arrays)*  and their corresponding image representations *(tif files)*. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. Also, the input image should be in the following suitable structure folder (inside the __`docker_stitching`__ folder), as displayed in Figure 1. 
 
-
-<p align="center">
+<!-- <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/145552832-abfffbf3-995c-4321-aa73-d9c05ee2776e.png" width="320" />
 <figcaption align = "center"><p align="center">
   Figure 1. Folder structure of the input image.</figcaption>
+</figure> -->
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80779522/145723317-798a74fe-8eb5-49be-9c22-5831a0e01127.png" width="320" />
+<figcaption align = "center"><p align="center">
+  Figure 1. Folder structure of the input image.</figcaption>
 </figure>
+
 
 The results are stored in a folder that has the same name with __`project_A`__ folder. In Figure 2, we present an overview of the developed module.
 
