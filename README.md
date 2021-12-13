@@ -50,7 +50,7 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
   
 For example:
   ```
-  python3 index_calculation.py --input_image ./input_image.png --output_path ./output_folder --vis vari gli
+  python3 index_calculation.py --input_image ./input_image.tif --output_path ./output_folder --vis vari gli
   ```
   
 ## Results
