@@ -77,7 +77,7 @@ The output of ```Vegetation Indices``` module is the calculated aforementioned i
   
 For example:
   ```
-  python3 index_calculation.py ./docker_stitching/.../input_image.tif ./output_path
+  python3 index_calculation.py ./input_image.tif ./output_path
   ```
   
 ## Results
