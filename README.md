@@ -53,8 +53,8 @@ For example:
   python3 index_calculation.py --input_image ./input_image.tif --output_path ./output_folder --vis vari gli
   ```
   
-## Results
-**Visualizations**
+## Visualizations
+<!-- **Visualizations** -->
 
 <table class="center">
    <tr class="center">
