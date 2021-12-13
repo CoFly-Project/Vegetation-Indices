@@ -73,7 +73,7 @@ The output of ```Vegetation Indices``` module is the calculated aforementioned i
 **ARGUMENTS**
   
 * ```~IMAGE_PATH```: refers to the path of the input image
-* ```~OUTPUT_PATH```: corresponds to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.tif)``` files are saved
+* ```~OUTPUT_PATH```: corresponds to the path where the extracted VIs ```(*.npy)``` and the corresponding images _(*.tif files)_ are saved
   
 For example:
   ```
