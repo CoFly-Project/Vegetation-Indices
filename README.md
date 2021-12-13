@@ -24,7 +24,7 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 
 
 
-The output of ```Vegetation Indices``` module is the calculated aforementioned indices *(numpy arrays)*  and their corresponding image representations *(tif files)*. The extracted files are named according to the corresponding VI, e.g. VARI.npy and they are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. In Figure 1, we present an overview of the developed module.
+The output of ```Vegetation Indices``` module is the calculated aforementioned indices *(numpy arrays)*  and their corresponding image representations *(tif files)*. The extracted files are named according to the corresponding name of VI, e.g. VARI.npy and they are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. In Figure 1, we present an overview of the developed module.
 
 <!-- It's required the input image should be contained in a folder inside the folder named __```docker_stitching```__, as displayed in Figure 1. In Figure 2, we present an overview of the developed module.  
   
