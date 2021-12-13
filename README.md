@@ -44,9 +44,9 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
 
 **ARGUMENTS**
   
-* ```--input_image``` corresponds to the path of the input image
-* ```--output_path```  refers to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.tif)``` files are saved. 
-* ```--vis``` corresponds to the selected VIs to be estimated. By default the module the four VIs of Table 1 are calculated. 
+* ```--input_image```: corresponds to the path of the input image
+* ```--output_path```:  refers to the path where the extracted VIs ```(*.npy)``` and the corresponding images ```(*.tif)``` files are saved. 
+* ```--vis```: corresponds to the selected VIs to be estimated. By default the module the four VIs of Table 1 are calculated. 
   
 For example:
   ```
