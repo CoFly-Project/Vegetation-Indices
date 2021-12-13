@@ -36,7 +36,7 @@ It's required the input image should be contained in a folder inside the folder 
 </figure> -->
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/145723317-798a74fe-8eb5-49be-9c22-5831a0e01127.png" width="280" />
+<img src="https://user-images.githubusercontent.com/80779522/145783312-ad821208-194d-4789-b015-9f3d790a04d6.png" width="280" />
 <figcaption align = "center"><p align="center">
   Figure 1. Folder structure of the input image.</figcaption>
 </figure>
