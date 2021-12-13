@@ -39,7 +39,7 @@ The output of ```Vegetation Indices``` module is the calculated index *(numpy ar
 2. Open terminal on ~REPO_PATH
 3. Run: 
 ```
-  python3 index_calculation.py --input_image ~IMAGE_PATH --output_path ~OUTPUT_PATH --vis ~ABBREVIATION_OF_VIs
+  python3 index_calculation.py --input_image ~IMAGE_PATH --output_path ~OUTPUT_PATH --vis ~ABBREVIATIONS_OF_VIs
 ```
 
 **ARGUMENTS**
