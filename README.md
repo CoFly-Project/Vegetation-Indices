@@ -24,22 +24,22 @@ Each one of the four selected VIs represents the actual reflectance of the exami
 
 
 
-The output of ```Vegetation Indices``` module is the calculated aforementioned indices *(numpy arrays)*  and their corresponding image representations *(tif files)*. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. 
+The output of ```Vegetation Indices``` module is the calculated aforementioned indices *(numpy arrays)*  and their corresponding image representations *(tif files)*. The extracted files are named according to the corresponding VI, e.g. VARI.npy. Τhe ```*.npy``` files are necessary for the [```Problematic Areas Detection```](https://github.com/CoFly-Project/Problematic-Areas-Detection/tree/cofly-branch) module. In Figure 1, we present an overview of the developed module.
 
-It's required the input image should be contained in a folder inside the folder named __```docker_stitching```__, as displayed in Figure 1. In Figure 2, we present an overview of the developed module.  
+<!-- It's required the input image should be contained in a folder inside the folder named __```docker_stitching```__, as displayed in Figure 1. In Figure 2, we present an overview of the developed module.  
   
 
-<!-- <p align="center">
+<p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/145552832-abfffbf3-995c-4321-aa73-d9c05ee2776e.png" width="320" />
 <figcaption align = "center"><p align="center">
   Figure 1. Folder structure of the input image.</figcaption>
-</figure> -->
+</figure> 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/145783312-ad821208-194d-4789-b015-9f3d790a04d6.png" width="280" />
 <figcaption align = "center"><p align="center">
   Figure 1. Folder structure of the input image.</figcaption>
-</figure>
+</figure>-->
 
 
 <!-- The results are stored in a folder that has the same name with __`project_A`__ folder. In Figure 2, we present an overview of the developed module. -->
@@ -50,7 +50,7 @@ It's required the input image should be contained in a folder inside the folder 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/145774546-15e623dc-5987-4ad8-8cb8-ac82351b2800.png" width="550" />
 <figcaption align = "center"><p align="center">
-  Figure 2. Workflow of the Vegetation-Indices module.</figcaption>
+  Figure 1. Workflow of the Vegetation-Indices module.</figcaption>
 </figure>
 
 
