@@ -48,7 +48,7 @@ It's required the input image should be contained in a folder inside the folder 
  -->
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/145774546-15e623dc-5987-4ad8-8cb8-ac82351b2800.png" width="600" />
+<img src="https://user-images.githubusercontent.com/80779522/145774546-15e623dc-5987-4ad8-8cb8-ac82351b2800.png" width="550" />
 <figcaption align = "center"><p align="center">
   Figure 2. Workflow of the Vegetation-Indices module.</figcaption>
 </figure>
